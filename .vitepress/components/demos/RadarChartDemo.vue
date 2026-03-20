@@ -1,39 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { RadarChart } from 'echarts/charts'
-import {
-  TooltipComponent,
-  LegendComponent,
-  RadarComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-
-// Register ECharts components
-use([
-  RadarChart,
-  TooltipComponent,
-  LegendComponent,
-  RadarComponent,
-  CanvasRenderer,
-])
-
-const chartData = ref({
-  labels: ['Speed', 'Reliability', 'Comfort', 'Safety', 'Efficiency'],
-  datasets: [
-    {
-      label: 'Product A',
-      data: [80, 90, 70, 85, 75],
-      color: '#3b82f6',
-    },
-    {
-      label: 'Product B',
-      data: [70, 75, 85, 80, 90],
-      color: '#10b981',
-    },
-  ],
-})
+import { RadarChart } from '../ui/charts'
 
 const option = ref({
   tooltip: {
@@ -41,41 +8,58 @@ const option = ref({
     confine: true,
   },
   legend: {
-    data: chartData.value.datasets.map(d => d.label),
+    data: ['Product A', 'Product B'],
     top: 10,
   },
   radar: {
-    indicator: chartData.value.labels.map(label => ({
-      name: label,
-      max: 100,
-    })),
+    indicator: [
+      { name: 'Speed', max: 100 },
+      { name: 'Reliability', max: 100 },
+      { name: 'Comfort', max: 100 },
+      { name: 'Safety', max: 100 },
+      { name: 'Efficiency', max: 100 },
+    ],
     shape: 'polygon',
     splitNumber: 4,
   },
   series: [
     {
       type: 'radar',
-      data: chartData.value.datasets.map(dataset => ({
-        name: dataset.label,
-        value: dataset.data,
-        areaStyle: {
-          color: dataset.color + '40',
+      data: [
+        {
+          value: [80, 90, 70, 85, 75],
+          name: 'Product A',
+          areaStyle: {
+            color: '#3b82f640',
+          },
+          lineStyle: {
+            color: '#3b82f6',
+            width: 2,
+          },
+          itemStyle: {
+            color: '#3b82f6',
+          },
         },
-        lineStyle: {
-          color: dataset.color,
-          width: 2,
+        {
+          value: [70, 75, 85, 80, 90],
+          name: 'Product B',
+          areaStyle: {
+            color: '#10b98140',
+          },
+          lineStyle: {
+            color: '#10b981',
+            width: 2,
+          },
+          itemStyle: {
+            color: '#10b981',
+          },
         },
-        itemStyle: {
-          color: dataset.color,
-        },
-      })),
+      ],
     },
   ],
 })
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <RadarChart :option="option" :height="300" />
 </template>

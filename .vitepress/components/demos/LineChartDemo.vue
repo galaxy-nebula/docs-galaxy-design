@@ -1,39 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { LineChart } from 'echarts/charts'
-import {
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-
-// Register ECharts components
-use([
-  LineChart,
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-  CanvasRenderer,
-])
-
-const chartData = ref({
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-  datasets: [
-    {
-      label: 'Sales',
-      data: [30, 45, 35, 50, 45, 60],
-      color: '#3b82f6',
-    },
-    {
-      label: 'Revenue',
-      data: [20, 35, 30, 45, 55, 50],
-      color: '#10b981',
-    },
-  ],
-})
+import { LineChart } from '../ui/charts'
 
 const option = ref({
   tooltip: {
@@ -41,7 +8,7 @@ const option = ref({
     confine: true,
   },
   legend: {
-    data: chartData.value.datasets.map(d => d.label),
+    data: ['Sales', 'Revenue'],
     top: 10,
   },
   grid: {
@@ -52,33 +19,49 @@ const option = ref({
   },
   xAxis: {
     type: 'category',
-    data: chartData.value.labels,
+    data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     boundaryGap: false,
   },
   yAxis: {
     type: 'value',
   },
-  series: chartData.value.datasets.map(dataset => ({
-    name: dataset.label,
-    type: 'line',
-    data: dataset.data,
-    smooth: true,
-    lineStyle: {
-      color: dataset.color,
-      width: 2,
+  series: [
+    {
+      name: 'Sales',
+      type: 'line',
+      data: [30, 45, 35, 50, 45, 60],
+      smooth: true,
+      lineStyle: {
+        color: '#3b82f6',
+        width: 2,
+      },
+      itemStyle: {
+        color: '#3b82f6',
+      },
+      areaStyle: {
+        opacity: 0,
+      },
     },
-    itemStyle: {
-      color: dataset.color,
+    {
+      name: 'Revenue',
+      type: 'line',
+      data: [20, 35, 30, 45, 55, 50],
+      smooth: true,
+      lineStyle: {
+        color: '#10b981',
+        width: 2,
+      },
+      itemStyle: {
+        color: '#10b981',
+      },
+      areaStyle: {
+        opacity: 0,
+      },
     },
-    areaStyle: {
-      opacity: 0,
-    },
-  })),
+  ],
 })
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <LineChart :option="option" :height="300" />
 </template>

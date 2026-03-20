@@ -1,39 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { BarChart } from 'echarts/charts'
-import {
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-
-// Register ECharts components
-use([
-  BarChart,
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-  CanvasRenderer,
-])
-
-const chartData = ref({
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-  datasets: [
-    {
-      label: 'Sales',
-      data: [120, 200, 150, 80, 170, 110, 130],
-      color: '#3b82f6',
-    },
-    {
-      label: 'Revenue',
-      data: [100, 180, 130, 90, 150, 120, 140],
-      color: '#10b981',
-    },
-  ],
-})
+import { BarChart } from '../ui/charts'
 
 const option = ref({
   tooltip: {
@@ -44,7 +11,7 @@ const option = ref({
     },
   },
   legend: {
-    data: chartData.value.datasets.map(d => d.label),
+    data: ['Sales', 'Revenue'],
     top: 10,
   },
   grid: {
@@ -55,24 +22,32 @@ const option = ref({
   },
   xAxis: {
     type: 'category',
-    data: chartData.value.labels,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   },
   yAxis: {
     type: 'value',
   },
-  series: chartData.value.datasets.map(dataset => ({
-    name: dataset.label,
-    type: 'bar',
-    data: dataset.data,
-    itemStyle: {
-      color: dataset.color,
+  series: [
+    {
+      name: 'Sales',
+      type: 'bar',
+      data: [120, 200, 150, 80, 170, 110, 130],
+      itemStyle: {
+        color: '#3b82f6',
+      },
     },
-  })),
+    {
+      name: 'Revenue',
+      type: 'bar',
+      data: [100, 180, 130, 90, 150, 120, 140],
+      itemStyle: {
+        color: '#10b981',
+      },
+    },
+  ],
 })
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <BarChart :option="option" :height="300" />
 </template>

@@ -1,32 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { PieChart } from 'echarts/charts'
-import {
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-
-// Register ECharts components
-use([
-  PieChart,
-  TooltipComponent,
-  LegendComponent,
-  CanvasRenderer,
-])
-
-const chartData = ref({
-  labels: ['Chrome', 'Safari', 'Firefox', 'Edge', 'Other'],
-  datasets: [
-    {
-      label: 'Browser Usage',
-      data: [45, 25, 15, 10, 5],
-      backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'],
-    },
-  ],
-})
+import { DonutChart } from '../ui/charts'
 
 const option = ref({
   tooltip: {
@@ -37,21 +11,21 @@ const option = ref({
   legend: {
     orient: 'vertical',
     left: 'left',
-    data: chartData.value.labels,
+    data: ['Chrome', 'Safari', 'Firefox', 'Edge', 'Other'],
   },
   series: [
     {
-      name: chartData.value.datasets[0].label,
+      name: 'Browser Usage',
       type: 'pie',
       radius: ['50%', '70%'],
       center: ['60%', '50%'],
-      data: chartData.value.labels.map((label, index) => ({
-        name: label,
-        value: chartData.value.datasets[0].data[index],
-        itemStyle: {
-          color: chartData.value.datasets[0].backgroundColor[index],
-        },
-      })),
+      data: [
+        { value: 45, name: 'Chrome', itemStyle: { color: '#3b82f6' } },
+        { value: 25, name: 'Safari', itemStyle: { color: '#10b981' } },
+        { value: 15, name: 'Firefox', itemStyle: { color: '#f59e0b' } },
+        { value: 10, name: 'Edge', itemStyle: { color: '#ef4444' } },
+        { value: 5, name: 'Other', itemStyle: { color: '#8b5cf6' } },
+      ],
       emphasis: {
         itemStyle: {
           shadowBlur: 10,
@@ -65,7 +39,5 @@ const option = ref({
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <DonutChart :option="option" :height="300" />
 </template>

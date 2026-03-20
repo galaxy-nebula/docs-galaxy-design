@@ -1,22 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { GaugeChart } from 'echarts/charts'
-import {
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
+import { ref } from 'vue'
+import { GaugeChart } from '../ui/charts'
 
-use([
-  GaugeChart,
-  TooltipComponent,
-  LegendComponent,
-  CanvasRenderer,
-])
-
-const option = computed(() => ({
+const option = ref({
   series: [
     {
       type: 'gauge',
@@ -99,11 +85,9 @@ const option = computed(() => ({
       ],
     },
   ],
-}))
+})
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <GaugeChart :option="option" :height="300" />
 </template>

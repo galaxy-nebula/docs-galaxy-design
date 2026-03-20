@@ -11,7 +11,8 @@ export const sharedConfig = defineConfig({
       }
     },
     ssr: {
-      noExternal: ['radix-vue', 'vue-echarts', 'echarts'],
+      noExternal: ['radix-vue'],
+      external: ['vue-echarts', 'echarts']
     },
     optimizeDeps: {
       exclude: ['vue-echarts', 'echarts']

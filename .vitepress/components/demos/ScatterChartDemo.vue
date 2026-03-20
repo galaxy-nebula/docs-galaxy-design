@@ -1,44 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import VChart from 'vue-echarts'
-import { use } from 'echarts/core'
-import { ScatterChart } from 'echarts/charts'
-import {
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
-
-// Register ECharts components
-use([
-  ScatterChart,
-  GridComponent,
-  TooltipComponent,
-  LegendComponent,
-  CanvasRenderer,
-])
-
-const chartData = ref({
-  datasets: [
-    {
-      label: 'Group A',
-      data: [
-        [10, 20], [15, 25], [20, 30], [25, 35], [30, 40],
-        [35, 45], [40, 50], [45, 55], [50, 60]
-      ],
-      color: '#3b82f6',
-    },
-    {
-      label: 'Group B',
-      data: [
-        [12, 50], [18, 45], [22, 40], [28, 35], [32, 30],
-        [38, 25], [42, 20], [48, 15], [52, 10]
-      ],
-      color: '#10b981',
-    },
-  ],
-})
+import { ScatterChart } from '../ui/charts'
 
 const option = ref({
   tooltip: {
@@ -49,7 +11,7 @@ const option = ref({
     },
   },
   legend: {
-    data: chartData.value.datasets.map(d => d.label),
+    data: ['Group A', 'Group B'],
     top: 10,
   },
   grid: {
@@ -66,27 +28,37 @@ const option = ref({
     type: 'value',
     name: 'Y Axis',
   },
-  series: chartData.value.datasets.map(dataset => ({
-    name: dataset.label,
-    type: 'scatter',
-    data: dataset.data,
-    symbolSize: 8,
-    itemStyle: {
-      color: dataset.color,
-      opacity: 0.8,
-    },
-    emphasis: {
+  series: [
+    {
+      name: 'Group A',
+      type: 'scatter',
+      data: [
+        [10, 20], [15, 25], [20, 30], [25, 35], [30, 40],
+        [35, 45], [40, 50], [45, 55], [50, 60]
+      ],
+      symbolSize: 8,
       itemStyle: {
-        borderColor: '#333',
-        borderWidth: 1,
+        color: '#3b82f6',
+        opacity: 0.8,
       },
     },
-  })),
+    {
+      name: 'Group B',
+      type: 'scatter',
+      data: [
+        [12, 50], [18, 45], [22, 40], [28, 35], [32, 30],
+        [38, 25], [42, 20], [48, 15], [52, 10]
+      ],
+      symbolSize: 8,
+      itemStyle: {
+        color: '#10b981',
+        opacity: 0.8,
+      },
+    },
+  ],
 })
 </script>
 
 <template>
-  <div class="w-full" style="height: 300px;">
-    <VChart :option="option" autoresize style="height: 100%; width: 100%;" />
-  </div>
+  <ScatterChart :option="option" :height="300" />
 </template>
