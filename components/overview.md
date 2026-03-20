@@ -83,23 +83,14 @@ Essential form controls for user input:
 - **[Switch](./switch)** - A control that allows the user to toggle between checked and not checked
 - **[Slider](./slider)** - An input where the user selects a value from within a given range
 - **[Textarea](./textarea)** - Displays a form textarea or a component that looks like a textarea
-- **[Form](./form)** - Building forms with proper validation and accessibility (web only)
-- **[Rate](./rate)** - Star rating with half star support
-- **[Button Group](./button-group)** - Button group with single/multiple selection
-- **[Autocomplete](./autocomplete)** - Autocomplete input with search and suggestions
 - **[Calendar](./calendar)** - Full-featured date picker (web only)
 - **[Calendar Range](./calendar-range)** - Date range picker with start and end dates (web only)
-- **[Date Picker](./date-picker)** - A date picker component with popover and calendar
-- **[Date Range Picker](./date-range-picker)** - A date range picker component with popover and calendar range (React/Next.js only)
-- **[Time Picker](./time-picker)** - A time picker component with popover and select inputs for hours and minutes (React/Next.js only)
-- **[Date Time Picker](./date-time-picker)** - A combined date and time picker component (React/Next.js only)
 - **[Tags Input](./tags-input)** - Input field for entering multiple tags or values
 
 ### Layout Components
 
 Components for organizing content:
 
-- **[Card](./card)** - Displays a card with header, content, and footer
 - **[Separator](./separator)** - Visually or semantically separates content
 - **[Accordion](./accordion)** - A vertically stacked set of interactive headings that each reveal a section of content
 - **[Tabs](./tabs)** - A set of layered sections of content known as tab panels that are displayed one at a time
@@ -109,7 +100,6 @@ Components for organizing content:
 - **[Scroll Area](./scroll-area)** - Augments native scroll functionality for custom, cross-browser styling (web only)
 - **[Resizable](./resizable)** - Accessible resizable panel groups and layouts with keyboard support (web only)
 - **[Sheet](./sheet)** - Slide-over panel that slides in from the edge of the screen
-- **[Toolbar](./toolbar)** - A container for grouping a set of controls (web only)
 
 ### Navigation Components
 
@@ -117,15 +107,12 @@ Components for navigation and menus:
 
 - **[Dropdown Menu](./dropdown-menu)** - Displays a menu to the user triggered by a button
 - **[Navigation Menu](./navigation-menu)** - A collection of links for navigating websites
-- **[Breadcrumb](./breadcrumb)** - Displays the path to the current resource using a hierarchy of links (web only)
 - **[Menubar](./menubar)** - A visually persistent menu common in desktop applications
 - **[Context Menu](./context-menu)** - Displays a menu to the user triggered by right-click or long-press
 - **[Popover](./popover)** - Displays rich content in a portal, triggered by a button
 - **[Tooltip](./tooltip)** - A popup that displays information on hover or focus
 - **[Pagination](./pagination)** - Pagination component with page navigation
 - **[Command](./command)** - Command palette for keyboard navigation
-- **[Sidebar](./sidebar)** - Layout with collapsible sidebar
-- **[Stepper](./stepper)** - Multi-step wizards and forms
 
 ### Interactive Components
 
@@ -141,39 +128,27 @@ Components for status, loading, and system feedback:
 - **[Alert Dialog](./alert-dialog)** - A modal dialog that interrupts the user with important content and expects a response
 - **[Alert](./alert)** - Displays a callout for user attention
 - **[Progress](./progress)** - Displays an indicator showing the completion progress of a task
-- **[Toast](./toast)** - Toast notification component
 - **[Skeleton](./skeleton)** - Loading placeholder skeleton
 - **[Empty](./empty)** - Empty state placeholder
-- **[Badge](./badge)** - Badge component for status indicators
 - **[Spinner](./spinner)** - Animated loading spinner
 
-### Modal & Overlay Components
 
-Modal dialogs and overlays:
-
-- **[Drawer](./drawer)** - Drawer component that slides from the edge
-- **[Popconfirm](./popconfirm)** - Popconfirm component for confirmation dialogs
 
 ### Chart Components
 
 Data visualization charts:
 
-- **[Line Chart](./line-chart)** - Display data as a responsive line chart with smooth curves and customizable styling
-- **[Bar Chart](./bar-chart)** - Display data as vertical or horizontal bars with support for stacked and grouped layouts
-- **[Pie Chart](./pie-chart)** - Display proportional data as a pie or donut chart with customizable labels and legend
-- **[Donut Chart](./donut-chart)** - Display proportional data as a donut chart with a hollow center
-- **[Area Chart](./area-chart)** - Visualize cumulative totals over time with filled areas and gradient support
-- **[Radar Chart](./radar-chart)** - Display multi-dimensional data comparison on a radial grid
-- **[Scatter Chart](./scatter-chart)** - Display distribution and correlation analysis with scatter plots
-- **[Mixed Chart](./mixed-chart)** - Combine multiple chart types (line, bar, area) in a single visualization
-- **[Gauge Chart](./gauge-chart)** - Display data as a gauge chart with customizable ranges and styling (Angular/React Native/Flutter only)
+- **[Line Chart](../charts/line-chart)** - Display data as a responsive line chart with smooth curves and customizable styling
+- **[Bar Chart](../charts/bar-chart)** - Display data as vertical or horizontal bars with support for stacked and grouped layouts
+- **[Pie Chart](../charts/pie-chart)** - Display proportional data as a pie or donut chart with customizable labels and legend
+- **[Donut Chart](../charts/donut-chart)** - Display proportional data as a donut chart with a hollow center
+- **[Area Chart](../charts/area-chart)** - Visualize cumulative totals over time with filled areas and gradient support
+- **[Radar Chart](../charts/radar-chart)** - Display multi-dimensional data comparison on a radial grid
+- **[Scatter Chart](../charts/scatter-chart)** - Display distribution and correlation analysis with scatter plots
+- **[Mixed Chart](../charts/mixed-chart)** - Combine multiple chart types (line, bar, area) in a single visualization
+- **[Gauge Chart](../charts/gauge-chart)** - Display data as a gauge chart with customizable ranges and styling (Angular/React Native/Flutter only)
 
-### Other Components
 
-Additional utility components:
-
-- **[Tour](./tour)** - Tour component for user onboarding
-- **[Carousel](./carousel)** - Carousel component for image/content slides
 
 ### Data Display Components
 
@@ -182,11 +157,6 @@ Components for displaying data:
 - **[Avatar](./avatar)** - An image element with a fallback for representing the user
 - **[Hover Card](./hover-card)** - For sighted users to preview content available behind a link
 - **[Table](./table)** - Data table with sorting, filtering, and selection
-- **[Table Paginated](./table-paginated)** - Paginated table with server-side support
-- **[List](./list)** - List component for displaying items
-- **[Tree](./tree)** - Tree view component for hierarchical data
-- **[Tag](./tag)** - Tag component for labeling
-- **[Timeline](./timeline)** - Timeline component for displaying events in sequence
 - **[Kbd](./kbd)** - Keyboard key display
 - **[Typography](./typography)** - Text formatting components
 
