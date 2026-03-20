@@ -20,6 +20,7 @@
     "vue": "^3.4.0"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001780",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "echarts": "^5.5.1",
