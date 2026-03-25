@@ -14,6 +14,7 @@ export const vi = defineConfig({
         items: sidebarComponents(),
       },
       '/vi/charts/': { base: '/vi/charts/', items: sidebarCharts() },
+      '/vi/blocks/': { base: '/vi/blocks/', items: sidebarBlocks() },
     },
 
     editLink: {
@@ -133,6 +134,7 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Button', link: 'button' },
         { text: 'Checkbox', link: 'checkbox' },
+        { text: 'Form', link: 'form' },
         { text: 'Input', link: 'input' },
         { text: 'Label', link: 'label' },
         { text: 'Radio Group', link: 'radio-group' },
@@ -151,6 +153,7 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Accordion', link: 'accordion' },
         { text: 'Aspect Ratio', link: 'aspect-ratio' },
+        { text: 'Card', link: 'card' },
         { text: 'Collapsible', link: 'collapsible' },
         { text: 'Resizable', link: 'resizable' },
         { text: 'Scroll Area', link: 'scroll-area' },
@@ -162,6 +165,7 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       text: 'Navigation Components',
       collapsed: false,
       items: [
+        { text: 'Breadcrumb', link: 'breadcrumb' },
         { text: 'Command (Chỉ Web)', link: 'command' },
         { text: 'Context Menu (Chỉ Web)', link: 'context-menu' },
         { text: 'Dropdown Menu', link: 'dropdown-menu' },
@@ -177,9 +181,12 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       text: 'Feedback Components',
       collapsed: false,
       items: [
+        { text: 'Alert', link: 'alert' },
         { text: 'Alert Dialog', link: 'alert-dialog' },
         { text: 'Dialog', link: 'dialog' },
         { text: 'Progress', link: 'progress' },
+        { text: 'Spinner', link: 'spinner' },
+        { text: 'Toast', link: 'toast' },
       ],
     },
     {
@@ -187,6 +194,7 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Avatar', link: 'avatar' },
+        { text: 'Badge', link: 'badge' },
         { text: 'Empty', link: 'empty' },
         { text: 'Pagination', link: 'pagination' },
         { text: 'Skeleton', link: 'skeleton' },
@@ -200,6 +208,10 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Calendar', link: 'calendar' },
         { text: 'Calendar Range', link: 'calendar-range' },
+        { text: 'Date Picker', link: 'date-picker' },
+        { text: 'Date Range Picker', link: 'date-range-picker' },
+        { text: 'Date Time Picker', link: 'date-time-picker' },
+        { text: 'Time Picker', link: 'time-picker' },
       ],
     },
     {
@@ -233,6 +245,36 @@ function sidebarCharts(): DefaultTheme.SidebarItem[] {
         { text: 'Biểu đồ phân tán', link: 'scatter-chart' },
         { text: 'Biểu đồ kết hợp', link: '/charts/mixed-chart' },
         { text: 'Biểu đồ đo', link: 'gauge-chart' },
+      ],
+    },
+  ];
+}
+
+function sidebarBlocks(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Bắt đầu',
+      collapsed: false,
+      items: [{ text: 'Tổng quan', link: 'overview' }],
+    },
+    {
+      text: 'Web Blocks',
+      collapsed: false,
+      items: [
+        { text: 'Chat UI', link: 'web/chat-ui' },
+        { text: 'Sidebar', link: 'web/sidebar' },
+        { text: 'Authentication', link: 'web/authentication' },
+        { text: 'Email Client', link: 'web/email' },
+        { text: 'Featured Sections', link: 'web/featured' },
+      ],
+    },
+    {
+      text: 'Mobile Blocks',
+      collapsed: false,
+      items: [
+        { text: 'Chat UI (Mobile)', link: 'mobile/chat-ui' },
+        { text: 'Drawer Navigation', link: 'mobile/sidebar' },
+        { text: 'Authentication (Mobile)', link: 'mobile/authentication' },
       ],
     },
   ];

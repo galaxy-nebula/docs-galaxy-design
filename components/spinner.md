@@ -1,36 +1,111 @@
 # Spinner
 
-Animated loading spinner for indeterminate progress states.
+A loading spinner component for indicating loading or processing states.
+
+<ComponentPreview name="SpinnerDemo">
+  <template #preview>
+    <DemoContainer>
+      <SpinnerDemo />
+    </DemoContainer>
+  </template>
+  <template #code>
+
+::: code-group
+
+```vue [Vue]
+<script setup lang="ts">
+import { Spinner } from '@/components/ui/spinner'
+</script>
+
+<template>
+  <Spinner />
+</template>
+```
+
+```tsx [React]
+import { Spinner } from "@/components/ui/spinner"
+
+export default function App() {
+  return <Spinner />
+}
+```
+
+```typescript [Angular]
+import { Component } from '@angular/core';
+import { SpinnerComponent } from '@/components/ui/spinner';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [SpinnerComponent],
+  template: `<ui-spinner />`
+})
+export class AppComponent {}
+```
+
+```dart [Flutter]
+import 'package:flutter/material.dart';
+import 'package:your_app/components/ui/spinner.dart';
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GalaxySpinner();
+  }
+}
+```
+
+:::
+
+  </template>
+</ComponentPreview>
 
 ## Installation
 
 ::: code-group
-```bash [React]
-npx galaxy-design add spinner
+
+```bash [npm]
+npx galaxy-design@latest add spinner
 ```
 
-```bash [Vue]
-npx galaxy-design add spinner
+```bash [pnpm]
+pnpm dlx galaxy-design@latest add spinner
 ```
 
-```bash [Angular]
-npx galaxy-design add spinner
+```bash [yarn]
+yarn dlx galaxy-design@latest add spinner
 ```
 
-```bash [React Native]
-npx galaxy-design add spinner
+```bash [bun]
+bunx galaxy-design@latest add spinner
 ```
 
-```bash [Flutter]
-npx galaxy-design add spinner
+```bash [global]
+# If you have installed galaxy-design globally
+galaxy-design add spinner
 ```
+
+:::
+
+::: tip Dependencies
+This component automatically installs the following dependencies:
+- **React**: `class-variance-authority`
+- **Vue**: `class-variance-authority`
+- **Angular**: `class-variance-authority`
+- **React Native**: `nativewind`, `tailwindcss`
+- **Flutter**: No additional dependencies
+
+No manual installation needed!
 :::
 
 ## Usage
 
+### Basic Example
+
 ::: code-group
+
 ```tsx [React]
-import { Spinner } from '@/components/ui/spinner'
+import { Spinner } from "@/components/ui/spinner"
 
 export default function SpinnerDemo() {
   return <Spinner />
@@ -47,58 +122,18 @@ import { Spinner } from '@/components/ui/spinner'
 </template>
 ```
 
-```typescript [Angular]
-import { Component } from '@angular/core';
-import { SpinnerComponent } from '@/components/ui/spinner';
-
-@Component({
-  selector: 'app-spinner-demo',
-  standalone: true,
-  imports: [SpinnerComponent],
-  template: `<ui-spinner />`,
-})
-export class SpinnerDemoComponent {}
-```
-
-```tsx [React Native]
-import { View } from 'react-native';
-import { Spinner } from '@/components/ui/spinner';
-
-export default function SpinnerDemo() {
-  return (
-    <View className="items-center justify-center">
-      <Spinner />
-    </View>
-  );
-}
-```
-
-```dart [Flutter]
-import 'package:flutter/material.dart';
-import 'package:your_app/components/ui/spinner.dart';
-
-class SpinnerDemo extends StatelessWidget {
-  const SpinnerDemo({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: GalaxySpinner(),
-    );
-  }
-}
-```
 :::
 
-## Sizes
+### Size Variants
 
 ::: code-group
+
 ```tsx [React]
-import { Spinner } from '@/components/ui/spinner'
+import { Spinner } from "@/components/ui/spinner"
 
 export default function SpinnerSizes() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex gap-4 items-center">
       <Spinner size="sm" />
       <Spinner size="default" />
       <Spinner size="lg" />
@@ -113,7 +148,7 @@ import { Spinner } from '@/components/ui/spinner'
 </script>
 
 <template>
-  <div class="flex items-center gap-4">
+  <div class="flex gap-4 items-center">
     <Spinner size="sm" />
     <Spinner size="default" />
     <Spinner size="lg" />
@@ -121,103 +156,62 @@ import { Spinner } from '@/components/ui/spinner'
 </template>
 ```
 
-```typescript [Angular]
-<div class="flex items-center gap-4">
-  <ui-spinner size="sm" />
-  <ui-spinner size="default" />
-  <ui-spinner size="lg" />
-</div>
-```
-
-```tsx [React Native]
-<View className="flex-row items-center gap-4">
-  <Spinner size="sm" />
-  <Spinner size="default" />
-  <Spinner size="lg" />
-</View>
-```
-
-```dart [Flutter]
-const Row(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    GalaxySpinner(size: SpinnerSize.sm),
-    SizedBox(width: 16),
-    GalaxySpinner(size: SpinnerSize.defaultSize),
-    SizedBox(width: 16),
-    GalaxySpinner(size: SpinnerSize.lg),
-  ],
-)
-```
 :::
 
-## In Buttons
+### With Text
 
 ::: code-group
-```tsx [React]
-import { Button } from '@/components/ui/button'
-import { Spinner } from '@/components/ui/spinner'
 
-function LoadingButton({ loading }: { loading: boolean }) {
+```tsx [React]
+import { Spinner } from "@/components/ui/spinner"
+
+export default function SpinnerWithText() {
   return (
-    <Button disabled={loading}>
-      {loading && <Spinner size="sm" className="mr-2" />}
-      Save changes
-    </Button>
+    <div className="flex items-center gap-2">
+      <Spinner />
+      <span>Loading...</span>
+    </div>
   )
 }
 ```
 
 ```vue [Vue]
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
 import { Spinner } from '@/components/ui/spinner'
-
-defineProps<{ loading: boolean }>()
 </script>
 
 <template>
-  <Button :disabled="loading">
-    <Spinner v-if="loading" size="sm" class="mr-2" />
-    Save changes
-  </Button>
+  <div class="flex items-center gap-2">
+    <Spinner />
+    <span>Loading...</span>
+  </div>
 </template>
 ```
 
-```typescript [Angular]
-import { Component, input } from '@angular/core';
-import { ButtonComponent } from '@/components/ui/button';
-import { SpinnerComponent } from '@/components/ui/spinner';
-
-@Component({
-  selector: 'app-loading-button',
-  standalone: true,
-  imports: [ButtonComponent, SpinnerComponent],
-  template: `
-    <button ui-button [disabled]="loading()">
-      <ui-spinner *ngIf="loading()" size="sm" class="mr-2" />
-      Save changes
-    </button>
-  `,
-})
-export class LoadingButtonComponent {
-  readonly loading = input(false);
-}
-```
 :::
 
 ## API Reference
 
 ### Props
 
-| Prop | Type | Default | Description | Frameworks |
-|------|------|---------|-------------|------------|
-| `size` | `'sm' \| 'default' \| 'lg'` | `'default'` | Visual size of the spinner | All |
-| `label` | `string` | `'Loading...'` | Accessible label for assistive technology | All |
-| `className` | `string` | `''` | Additional CSS classes | All |
+| Prop | Type | Default | Description | Framework Support |
+|------|------|---------|-------------|-------------------|
+| `size` | `'sm' | 'default' | 'lg'` | `'default'` | The size of the spinner | All |
+| `className` / `class` | `string` | `''` | CSS class names | All |
+| `ariaLabel` | `string` | `'Loading...'` | Accessible label | All |
 
 ## Accessibility
 
-- Non-interactive loading indicator
-- Announces its `label` to assistive technology
-- Suitable for indeterminate loading states
+- **Screen Reader**: Uses `role="status"` and `aria-label` for loading state
+- **Focus Management**: Does not receive focus (decorative)
+- **WCAG Compliance**: WCAG 2.1 Level AA compliant
+
+## Author
+
+**Bùi Trọng Hiếu (kevinbui)**
+- GitHub: [@buikevin](https://github.com/buikevin)
+- Email: kevinbui210191@gmail.com
+
+## License
+
+MIT © 2025 Bùi Trọng Hiếu (kevinbui)
