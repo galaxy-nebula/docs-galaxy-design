@@ -6,9 +6,9 @@ Registry CLI hiện cung cấp số lượng component và block có thể cài 
 
 | Nền Tảng | Components | Styling | Trạng Thái |
 |----------|-----------|---------|--------|
-| **React 18+** | 68 | Tailwind CSS v3/v4 + Radix UI | Mốc tham chiếu cho web |
-| **Vue 3** | 68 | Tailwind CSS v3/v4 + Radix Vue | Đủ component parity với React |
-| **Angular 20+** | 64 | Tailwind CSS v3/v4 + Radix NG | Đủ component parity với React |
+| **React 18+** | 69 | Tailwind CSS v3/v4 + Radix UI | Mốc tham chiếu cho web |
+| **Vue 3** | 69 | Tailwind CSS v3/v4 + Radix Vue | Đủ component parity với React |
+| **Angular 20+** | 65 | Tailwind CSS v3/v4 + Radix NG | Đủ component parity với React |
 | **React Native** | 51 | NativeWind | Phạm vi riêng cho mobile |
 | **Flutter** | 50 | Material Design 3 | Phạm vi riêng cho mobile |
 
