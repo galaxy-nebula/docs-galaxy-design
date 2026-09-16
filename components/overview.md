@@ -1,18 +1,18 @@
 # Components Overview
 
-Galaxy UI provides **197 production-ready components** across **5 platforms**: Vue, React, Angular, React Native, and Flutter.
+The CLI registry currently exposes the following installable component and block entries. Counts are generated from framework registries; they are not a claim of one-to-one API parity.
 
 ## Platform Coverage
 
 | Platform | Components | Styling | Status |
 |----------|-----------|---------|--------|
-| **Vue 3** | 41 | Tailwind CSS + Radix Vue | ✅ Complete |
-| **React 18+** | 41 | Tailwind CSS + Radix UI | ✅ Complete |
-| **Angular 20+** | 41 | Tailwind CSS + Radix NG | ✅ Complete |
-| **React Native** | 37 | NativeWind v4 | ✅ Complete |
-| **Flutter** | 37 | Material Design 3 | ✅ Complete |
+| **React 18+** | 66 | Tailwind CSS v3/v4 + Radix UI | Reference web coverage |
+| **Vue 3** | 66 | Tailwind CSS v3/v4 + Radix Vue | Full component parity with React |
+| **Angular 20+** | 64 | Tailwind CSS v3/v4 + Radix NG | Full component parity with React |
+| **React Native** | 50 | NativeWind | Mobile-specific coverage |
+| **Flutter** | 49 | Material Design 3 | Mobile-specific coverage |
 
-**Total: 197 components** with **100% practical coverage** for mobile-suitable components.
+The web registries share 61 base component names, generated from the canonical manifests in `packages/contracts`. Framework parity gaps and block counts are recorded in the manifest artifacts.
 
 ## Installation
 
@@ -164,7 +164,7 @@ Components for displaying data:
 
 ### Web Frameworks
 
-All web components are available for:
+Web component APIs are intentionally similar, but the current catalogs are not identical:
 
 - **Vue 3** - Composition API with `<script setup>`
 - **React 18+** - Hooks with `forwardRef`
@@ -172,12 +172,12 @@ All web components are available for:
 
 ### Mobile Platforms
 
-Mobile components (37 per platform) are available for:
+Mobile components are available for:
 
 - **React Native** - Functional components with NativeWind v4 styling
 - **Flutter** - StatelessWidget with Material Design 3
 
-> **Note**: Not all web components are suitable for mobile (e.g., Hover Card, Context Menu). Mobile platforms include 37 practically applicable components.
+> **Note**: Not all web components are suitable for mobile (for example Hover Card and Context Menu), so mobile catalogs intentionally differ.
 
 ## Features
 

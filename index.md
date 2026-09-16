@@ -50,7 +50,7 @@ features:
 
   - icon: 📱
     title: Mobile-First
-    details: 37 components for React Native (NativeWind v4) and Flutter (Material Design 3). 41 components for web frameworks. Responsive web components.
+    details: Framework-specific registries for React Native and Flutter, plus React, Vue, and Angular web catalogs with documented parity gaps.
 
   - icon: 🌐
     title: i18n Ready
@@ -96,6 +96,8 @@ bunx galaxy-design@latest add button input dialog
 :::
 
 ## Platform Support
+
+`nextjs` and `nuxtjs` are supported as CLI targets layered on top of the React and Vue source registries. They are not separate package families.
 
 ### Web Frameworks
 
@@ -174,9 +176,7 @@ class MyApp extends StatelessWidget {
 Choose your favorite framework - web or mobile. We support Vue 3, React, Angular, React Native, and Flutter with the same beautiful components.
 
 ### 📱 Web to Mobile
-**197 component implementations** across **5 platforms**:
-- **Web**: 41 components × 3 frameworks = 123 implementations (Vue 3, React 18+, Angular 18+)
-- **Mobile**: 37 components × 2 platforms = 74 implementations (React Native with NativeWind v4, Flutter with Material 3)
+The CLI currently indexes **65 React**, **61 Vue**, **60 Angular**, **50 React Native**, and **49 Flutter** installable component/block entries. The catalogs share a common core but are not yet identical; see the [coverage matrix](/components/overview).
 
 ### 🔓 You Own The Code
 Unlike npm packages, you copy the component code directly into your project. Modify it as you need. No version conflicts. No black-box dependencies.

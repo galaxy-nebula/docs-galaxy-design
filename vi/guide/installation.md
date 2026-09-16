@@ -1,316 +1,68 @@
-# Cài Đặt
+# Cài đặt
 
-Hướng dẫn cài đặt Galaxy UI vào dự án của bạn.
+Galaxy UI sao chép source component có thể chỉnh sửa vào dự án, theo tư tưởng shadcn nhưng hỗ trợ nhiều framework.
 
-## Yêu Cầu
+## Yêu cầu
 
-Trước khi bắt đầu, đảm bảo bạn đã cài đặt:
+- Node.js 18+ hoặc Bun 1+
+- npm, pnpm, Yarn hoặc Bun
+- Vue 3, React 18+, Angular 20+, React Native hoặc Flutter
+- Tailwind CSS v3.4 hoặc v4 cho dự án web
 
-- **Node.js** 18+ hoặc **Bun** 1.0+
-- **npm**, **yarn**, **pnpm** hoặc **bun**
-- Một trong các framework: **Vue 3**, **React 18+**, hoặc **Angular 20+**
-- **Tailwind CSS** 3.4+ đã được cấu hình
+## Khởi tạo
 
-## Bước 1: Khởi Tạo Dự Án
-
-Bạn không cần cài đặt CLI globally. Sử dụng trực tiếp với package manager:
-
-::: code-group
-
-```bash [npm]
+```bash
 npx galaxy-design@latest init
 ```
 
-```bash [pnpm]
-pnpm dlx galaxy-design@latest init
-```
+CLI phát hiện framework, package manager, cấu trúc source và major version của Tailwind; sau đó tạo `components.json`, utilities/runtime, alias và cài đúng phiên bản dependency.
 
-```bash [yarn]
-yarn dlx galaxy-design@latest init
-```
-
-```bash [bun]
-bunx galaxy-design@latest init
-```
-
+::: tip Target framework và source package
+Next.js dùng registry React kèm biến đổi dành cho Next. Nuxt dùng registry Vue với đường dẫn tương thích Nuxt. Đây là target của CLI, không phải package component riêng.
 :::
 
-### Hoặc Cài Đặt Global (Tùy chọn)
+## Thêm component
 
-::: code-group
-
-```bash [npm]
-npm install -g galaxy-design
-galaxy-design init
-```
-
-```bash [pnpm]
-pnpm add -g galaxy-design
-galaxy-design init
-```
-
-```bash [yarn]
-yarn global add galaxy-design
-galaxy-design init
-```
-
-```bash [bun]
-bun add -g galaxy-design
-galaxy-design init
-```
-
-:::
-
-## Bước 2: Cấu Hình
-
-Lệnh init sẽ chạy cấu hình tương tác:
-
-CLI sẽ:
-1. ✅ Phát hiện framework của bạn tự động
-2. ✅ Hỏi về cấu hình (TypeScript, base color, icon library)
-3. ✅ Tạo file `components.json`
-4. ✅ Cài đặt dependencies cần thiết
-5. ✅ Tạo file utility functions
-
-### Cấu Hình Interactive
-
-```
-? Framework detected: vue
-? Use TypeScript? Yes
-? Choose base color: › slate
-? Icon library: › lucide
-? Where is your global CSS file? › src/assets/styles/global.css
-? Configure import alias for components? › @/components
-? Configure import alias for utils? › @/lib/utils
-```
-
-## Bước 3: Thêm Components
-
-Thêm components bạn cần:
-
-::: code-group
-
-```bash [npm]
+```bash
 npx galaxy-design@latest add button
-```
-
-```bash [pnpm]
-pnpm dlx galaxy-design@latest add button
-```
-
-```bash [yarn]
-yarn dlx galaxy-design@latest add button
-```
-
-```bash [bun]
-bunx galaxy-design@latest add button
-```
-
-```bash [global]
-galaxy-design add button
-```
-
-:::
-
-### Thêm Nhiều Components
-
-::: code-group
-
-```bash [npm]
 npx galaxy-design@latest add button input dialog
+npx galaxy-design@latest add --all
 ```
 
-```bash [pnpm]
-pnpm dlx galaxy-design@latest add button input dialog
-```
+Source được giữ trong repository để bạn chỉnh sửa. Dependency npm và dependency giữa các component được lấy từ registry tương ứng.
 
-```bash [yarn]
-yarn dlx galaxy-design@latest add button input dialog
-```
-
-```bash [bun]
-bunx galaxy-design@latest add button input dialog
-```
-
-```bash [global]
-galaxy-design add button input dialog
-```
-
-:::
-
-## File Cấu Hình: components.json
-
-File `components.json` được tạo trong thư mục gốc:
+## Cấu hình
 
 ```json
 {
-  "$schema": "https://ui.galaxy.com/schema.json",
+  "$schema": "https://galaxy-design.vercel.app/schema.json",
   "framework": "vue",
   "typescript": true,
   "tailwind": {
-    "config": "tailwind.config.js",
+    "version": 4,
+    "config": "",
     "css": "src/assets/styles/global.css",
     "baseColor": "slate",
-    "cssVariables": true
+    "cssVariables": true,
+    "prefix": ""
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils"
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib"
   },
   "iconLibrary": "lucide"
 }
 ```
 
-## Framework Cụ Thể
+Với Tailwind v3, CLI giữ `tailwind.config.*`. Với v4, CLI sinh semantic theme bridge theo kiểu CSS-first. Xem [Tailwind CSS](/vi/guide/tailwind).
 
-### Vue 3
-
-```bash
-# Khởi tạo
-galaxy-design init
-
-# Dependencies được cài đặt:
-# - radix-vue
-# - clsx
-# - tailwind-merge
-# - lucide-vue-next
-```
-
-### React
+## Chuyển từ v3 sang v4
 
 ```bash
-# Khởi tạo
-galaxy-design init
-
-# Dependencies được cài đặt:
-# - @radix-ui/react-slot
-# - clsx
-# - tailwind-merge
-# - lucide-react
+npx galaxy-design@latest migrate tailwind --dry-run
+npx galaxy-design@latest migrate tailwind --yes
 ```
 
-### Angular
-
-```bash
-# Khởi tạo
-galaxy-design init
-
-# Dependencies được cài đặt:
-# - radix-ng
-# - clsx
-# - tailwind-merge
-# - lucide-angular
-```
-
-## Cấu Hình Tailwind CSS
-
-Đảm bảo Tailwind CSS được cấu hình đúng:
-
-### tailwind.config.js
-
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: ["class"],
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        // ... more colors
-      },
-    },
-  },
-  plugins: [],
-}
-```
-
-### Global CSS
-
-Thêm CSS variables vào file CSS global của bạn:
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    /* ... more variables */
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    /* ... more variables */
-  }
-}
-```
-
-## Sử Dụng
-
-Sau khi cài đặt, import và sử dụng components:
-
-::: code-group
-
-```vue [Vue]
-<script setup lang="ts">
-import { Button } from '@/components/ui/button'
-</script>
-
-<template>
-  <Button variant="default">Click me</Button>
-</template>
-```
-
-```tsx [React]
-import { Button } from "@/components/ui/button"
-
-export default function App() {
-  return <Button variant="default">Click me</Button>
-}
-```
-
-```typescript [Angular]
-import { ButtonComponent } from '@/components/ui/button';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ButtonComponent],
-  template: `<ui-button variant="default">Click me</ui-button>`
-})
-export class AppComponent {}
-```
-
-:::
-
-## Tiếp Theo
-
-- [Sử dụng CLI](/vi/guide/cli-usage) - Tìm hiểu thêm về CLI commands
-- [Cấu hình](/vi/guide/configuration) - Tùy chỉnh components.json
-- [Components](/vi/components/overview) - Khám phá tất cả components
-
-## Gặp Vấn Đề?
-
-Nếu bạn gặp vấn đề, vui lòng:
-- Kiểm tra [GitHub Issues](https://github.com/buikevin/galaxy-design/issues)
-- Tạo issue mới với thông tin chi tiết
-- Liên hệ: kevinbui210191@gmail.com
+Hãy xem các cảnh báo tương thích và giữ bản sao lưu trong `.galaxy/backups/` cho tới khi ứng dụng build thành công.

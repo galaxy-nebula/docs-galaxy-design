@@ -51,7 +51,7 @@ Galaxy UI creates a `components.json` file in your project root:
 
 ```json
 {
-  "$schema": "https://ui.galaxy.com/schema.json",
+  "$schema": "https://galaxy-design.vercel.app/schema.json",
   "framework": "react-native",
   "typescript": true,
   "styling": "nativewind",

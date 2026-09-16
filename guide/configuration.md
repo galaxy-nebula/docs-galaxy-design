@@ -22,7 +22,7 @@ your-project/
 
 ```json
 {
-  "$schema": "https://ui.galaxy.com/schema.json",
+  "$schema": "https://galaxy-design.vercel.app/schema.json",
   "framework": "react",
   "typescript": true,
   "tailwind": {
@@ -307,7 +307,7 @@ The `$schema` field provides autocomplete and validation in editors:
 
 ```json
 {
-  "$schema": "https://ui.galaxy.com/schema.json"
+  "$schema": "https://galaxy-design.vercel.app/schema.json"
 }
 ```
 

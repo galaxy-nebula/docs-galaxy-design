@@ -1,306 +1,106 @@
 # CLI Usage
 
-Galaxy UI CLI provides commands to easily add components to your project.
+Galaxy UI exposes these command flows: `init`, `add`, `list`, `doctor`, `diff`, `update`, and `migrate tailwind`.
 
-## Commands
+## `init`
 
-### `init`
+Detect the framework and Tailwind version, create `components.json`, configure aliases/runtime files, and install matching dependencies.
 
-Initialize your project for Galaxy UI components.
-
-::: code-group
-
-```bash [npm]
+```bash
 npx galaxy-design@latest init
-```
-
-```bash [pnpm]
-pnpm dlx galaxy-design@latest init
-```
-
-```bash [yarn]
-yarn dlx galaxy-design@latest init
-```
-
-```bash [bun]
-bunx galaxy-design@latest init
-```
-
-```bash [global]
-galaxy-design init
-```
-
-:::
-
-This command will:
-
-1. **Detect your framework** - Automatically detects if you're using Vue, React, or Angular
-2. **Create config file** - Creates `galaxy-ui.config.json` in your project root
-3. **Set up directories** - Creates the `components/ui` directory structure
-4. **Configure paths** - Updates your `tsconfig.json` with path aliases
-5. **Install dependencies** - Installs required peer dependencies (Radix primitives, etc.)
-
-#### Options
-
-```bash
---cwd <path>        # Working directory (default: current directory)
---yes, -y           # Skip all prompts and use defaults
-```
-
-Example:
-
-```bash
 npx galaxy-design@latest init --yes
+npx galaxy-design@latest init --cwd ./my-app
 ```
 
-### `add`
+Supported targets are Vue, Nuxt, React, Next.js, Angular, React Native, and Flutter. Next.js uses React sources with Next-specific transforms; Nuxt uses Vue sources.
 
-Add components to your project.
+## `add`
 
-::: code-group
-
-```bash [npm]
-npx galaxy-design@latest add [components...]
-```
-
-```bash [pnpm]
-pnpm dlx galaxy-design@latest add [components...]
-```
-
-```bash [yarn]
-yarn dlx galaxy-design@latest add [components...]
-```
-
-```bash [bun]
-bunx galaxy-design@latest add [components...]
-```
-
-```bash [global]
-galaxy-design add [components...]
-```
-
-:::
-
-#### Examples
-
-Add a single component:
+Copy editable source files and install packages declared by the framework registry.
 
 ```bash
 npx galaxy-design@latest add button
-```
-
-Add multiple components:
-
-```bash
 npx galaxy-design@latest add button input dialog
+npx galaxy-design@latest add --all
+npx galaxy-design@latest add button --cwd ./my-app
 ```
 
-Add all form components:
+With no component name, the CLI opens an interactive selector. Registry dependencies are resolved first, and existing files are kept. The command returns a non-zero exit code if a requested component, source file, or dependency installation fails.
+
+## `migrate tailwind`
+
+Migrate a detected Tailwind v3 project to the Galaxy UI v4 scaffold.
 
 ```bash
-npx galaxy-design@latest add button input checkbox radio-group select slider switch textarea label
+npx galaxy-design@latest migrate tailwind --dry-run
+npx galaxy-design@latest migrate tailwind --yes
+npx galaxy-design@latest migrate tailwind --cwd ./my-app
 ```
 
-#### Options
+The command creates a backup in `.galaxy/backups/`, updates package/configuration files, and reports items requiring manual review. See [Tailwind CSS](/guide/tailwind) for compatibility details.
+
+## `list`
+
+Show the installable components and blocks for the configured (or requested) framework.
 
 ```bash
---cwd <path>        # Working directory
---overwrite         # Overwrite existing files
---yes, -y           # Skip confirmation prompts
---path <path>       # Custom path for components (default: components/ui)
-```
-
-Example:
-
-```bash
-npx galaxy-design@latest add button --overwrite --yes
-```
-
-### `list`
-
-List all available components.
-
-::: code-group
-
-```bash [npm]
 npx galaxy-design@latest list
+npx galaxy-design@latest list --framework react
+npx galaxy-design@latest list --category feedback
 ```
 
-```bash [pnpm]
-pnpm dlx galaxy-design@latest list
+## `doctor`
+
+Validate the current project setup: `components.json`, framework detection, Tailwind version and animation setup, utils/components paths, and required dependencies. Exits non-zero when a required check fails.
+
+```bash
+npx galaxy-design@latest doctor
+npx galaxy-design@latest doctor --cwd ./my-app
 ```
 
-```bash [yarn]
-yarn dlx galaxy-design@latest list
-```
+## `diff`
 
-```bash [bun]
-bunx galaxy-design@latest list
-```
-
-```bash [global]
-galaxy-design list
-```
-
-:::
-
-This will display all 23 available components with their descriptions.
-
-### `diff`
-
-Check for differences between local and registry versions.
-
-::: code-group
-
-```bash [npm]
-npx galaxy-design@latest diff [component]
-```
-
-```bash [pnpm]
-pnpm dlx galaxy-design@latest diff [component]
-```
-
-```bash [yarn]
-yarn dlx galaxy-design@latest diff [component]
-```
-
-```bash [bun]
-bunx galaxy-design@latest diff [component]
-```
-
-```bash [global]
-galaxy-design diff [component]
-```
-
-:::
-
-Example:
+Compare installed component files against the pinned registry source. Exits non-zero when a file is missing or modified:
 
 ```bash
 npx galaxy-design@latest diff button
+npx galaxy-design@latest diff button input
 ```
 
-## Configuration File
+## `update`
 
-The init command creates a `galaxy-ui.config.json` file:
+Re-download component source from the registry and overwrite local files, keeping a backup under `.galaxy/backups/update/`:
+
+```bash
+npx galaxy-design@latest update button
+npx galaxy-design@latest update button input
+```
+
+## Configuration file
+
+`init` creates `components.json`:
 
 ```json
 {
-  "$schema": "https://galaxy-ui.dev/schema.json",
+  "$schema": "https://galaxy-design.vercel.app/schema.json",
   "framework": "vue",
-  "style": "default",
+  "typescript": true,
   "tailwind": {
-    "config": "tailwind.config.js",
-    "css": "src/assets/index.css",
+    "version": 4,
+    "config": "",
+    "css": "src/assets/styles/global.css",
     "baseColor": "slate",
-    "cssVariables": true
+    "cssVariables": true,
+    "prefix": ""
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils"
-  }
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib"
+  },
+  "iconLibrary": "lucide"
 }
 ```
 
-### Configuration Options
-
-| Option | Type | Description |
-|--------|------|-------------|
-| `framework` | `"vue" \| "react" \| "angular"` | Your framework |
-| `style` | `"default" \| "new-york"` | Component style variant |
-| `tailwind.config` | `string` | Path to Tailwind config |
-| `tailwind.css` | `string` | Path to global CSS file |
-| `tailwind.baseColor` | `string` | Base color palette |
-| `tailwind.cssVariables` | `boolean` | Use CSS variables |
-| `aliases.components` | `string` | Component path alias |
-| `aliases.utils` | `string` | Utils path alias |
-
-## Package Manager Detection
-
-The CLI automatically detects your package manager based on lock files:
-
-- `package-lock.json` → npm
-- `pnpm-lock.yaml` → pnpm
-- `yarn.lock` → yarn
-- `bun.lockb` → bun
-
-It will use the detected package manager for installing dependencies.
-
-## Tips
-
-### Always use the latest version
-
-Using `@latest` ensures you get the most recent version:
-
-```bash
-npx galaxy-design@latest add button
-```
-
-### Create aliases for convenience
-
-Add to your shell profile (`.bashrc`, `.zshrc`, etc.):
-
-```bash
-alias gui="npx galaxy-design@latest"
-```
-
-Then use:
-
-```bash
-gui add button
-gui init
-```
-
-### Use with CI/CD
-
-In CI/CD environments, use the `--yes` flag to skip prompts:
-
-```bash
-npx galaxy-design@latest init --yes
-npx galaxy-design@latest add button input --yes
-```
-
-## Troubleshooting
-
-### "Component not found"
-
-Make sure you're using the correct component name. Use `galaxy-design list` to see all available components.
-
-### "Framework not detected"
-
-The CLI couldn't detect your framework. Make sure you have the framework's package.json dependencies installed:
-
-- Vue: `vue` package
-- React: `react` and `react-dom` packages
-- Angular: `@angular/core` package
-
-### "Path alias not configured"
-
-Make sure your `tsconfig.json` or `jsconfig.json` has the path aliases:
-
-```json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
-}
-```
-
-## Next Steps
-
-- [Configuration](/guide/configuration) - Customize your setup
-- [Components](/components/overview) - Browse available components
-- [Theming](/guide/theming) - Customize the look and feel
-
-## Author
-
-**Bùi Trọng Hiếu (kevinbui)**
-- GitHub: [@buikevin](https://github.com/buikevin)
-- Email: kevinbui210191@gmail.com
-
-## License
-
-MIT © 2025 Bùi Trọng Hiếu (kevinbui)
+Package-manager detection uses `bun.lock`/`bun.lockb`, `pnpm-lock.yaml`, `yarn.lock`, or `package-lock.json`; npm is the fallback.

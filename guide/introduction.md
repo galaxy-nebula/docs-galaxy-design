@@ -9,13 +9,13 @@ Galaxy UI is a collection of re-usable components that spans both web and mobile
 ### Key Features
 
 - **🎨 Universal Platform Support** - Vue 3.3+, React 18+, Angular 18+, React Native 0.74+, Flutter 3.24+
-- **📱 Web + Mobile** - 197 component implementations across 5 platforms (41 web components × 3 frameworks + 37 mobile components × 2 platforms)
+- **📱 Web + Mobile** - Framework-specific registries across five platforms, with coverage differences documented explicitly
 - **♿ Accessible** - Built on Radix primitives (Radix UI, Radix Vue, Radix NG) with WAI-ARIA support
 - **🎭 Customizable** - Tailwind CSS + CSS variables (web), NativeWind v4 (React Native), Material Design 3 (Flutter)
 - **📦 Copy-Paste** - Full code ownership, type-safe props, no locked dependencies
 - **🌙 Dark Mode** - CSS variables theming (web), system theme detection (mobile)
 - **🚀 CLI Tool** - `galaxy-design` CLI with framework auto-detection
-- **📱 Mobile-First** - 37 production-ready components optimized for touch interfaces
+- **📱 Mobile-First** - Dedicated React Native and Flutter catalogs optimized for their runtimes
 - **🔧 TypeScript** - Full type safety with inferred prop types across all frameworks
 
 ## Why Copy-Paste?

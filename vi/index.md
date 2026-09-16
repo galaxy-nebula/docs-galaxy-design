@@ -174,9 +174,7 @@ class MyApp extends StatelessWidget {
 Chọn framework/platform yêu thích của bạn - web hoặc mobile. Chúng tôi hỗ trợ Vue 3, React, Angular, React Native và Flutter với component đẹp giống nhau.
 
 ### 📱 Từ Web Đến Mobile
-**197 components** trên **5 nền tảng**:
-- **Web**: 41 components × 3 frameworks (Vue, React, Angular)
-- **Mobile**: 37 components × 2 platforms (React Native với NativeWind, Flutter với Material 3)
+CLI hiện lập chỉ mục **65 mục React**, **61 Vue**, **60 Angular**, **50 React Native** và **49 Flutter** (component + block). Các catalog có phần lõi chung nhưng chưa đồng bộ tuyệt đối; xem [bảng phạm vi](/vi/components/overview).
 
 ### 🔓 Bạn Sở Hữu Code
 Không giống như npm packages, bạn copy code component trực tiếp vào dự án. Sửa đổi theo nhu cầu. Không xung đột phiên bản.

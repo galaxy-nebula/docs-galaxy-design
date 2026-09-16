@@ -9,7 +9,7 @@ Galaxy UI là bộ sưu tập các component có thể tái sử dụng trải d
 ### Tính Năng Chính
 
 - **🎨 Hỗ Trợ Đa Nền Tảng** - Vue 3, React, Angular, React Native và Flutter
-- **📱 Web + Mobile** - 197 components trên 5 nền tảng
+- **📱 Web + Mobile** - Registry riêng theo framework trên 5 nền tảng, với khác biệt phạm vi được ghi rõ
 - **♿ Dễ Tiếp Cận** - Xây dựng trên Radix primitives với hỗ trợ ARIA (web)
 - **🎭 Tùy Chỉnh** - Tailwind CSS (web) / NativeWind (RN) / Material 3 (Flutter)
 - **📦 Copy-Paste** - Sở hữu code của bạn, không phụ thuộc npm

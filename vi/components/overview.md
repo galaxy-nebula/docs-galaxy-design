@@ -1,18 +1,18 @@
 # Tổng quan Components
 
-Galaxy UI cung cấp **197 components production-ready** trên **5 nền tảng**: Vue, React, Angular, React Native và Flutter.
+Registry CLI hiện cung cấp số lượng component và block có thể cài như bảng dưới. Đây không phải tuyên bố rằng API giữa mọi framework đã đồng bộ tuyệt đối.
 
 ## Phạm Vi Nền Tảng
 
 | Nền Tảng | Components | Styling | Trạng Thái |
 |----------|-----------|---------|--------|
-| **Vue 3** | 41 | Tailwind CSS + Radix Vue | ✅ Hoàn Thành |
-| **React 18+** | 41 | Tailwind CSS + Radix UI | ✅ Hoàn Thành |
-| **Angular 20+** | 41 | Tailwind CSS + Radix NG | ✅ Hoàn Thành |
-| **React Native** | 37 | NativeWind v4 | ✅ Hoàn Thành |
-| **Flutter** | 37 | Material Design 3 | ✅ Hoàn Thành |
+| **React 18+** | 66 | Tailwind CSS v3/v4 + Radix UI | Mốc tham chiếu cho web |
+| **Vue 3** | 66 | Tailwind CSS v3/v4 + Radix Vue | Đủ component parity với React |
+| **Angular 20+** | 64 | Tailwind CSS v3/v4 + Radix NG | Đủ component parity với React |
+| **React Native** | 50 | NativeWind | Phạm vi riêng cho mobile |
+| **Flutter** | 49 | Material Design 3 | Phạm vi riêng cho mobile |
 
-**Tổng cộng: 197 components** với **phạm vi thực tế 100%** cho các component phù hợp với mobile.
+Ba registry web có chung 56 tên component nền. React có thêm `date-picker`, `date-range-picker`, `date-time-picker`, `time-picker`; Angular có thêm `gauge`. Tổng trong bảng đã bao gồm block.
 
 ## Cài đặt
 
@@ -158,12 +158,12 @@ Tất cả web components đều khả dụng cho:
 
 ### Mobile Platforms
 
-Mobile components (37 trên mỗi nền tảng) khả dụng cho:
+Mobile components khả dụng cho:
 
 - **React Native** - Functional components với NativeWind v4 styling
 - **Flutter** - StatelessWidget với Material Design 3
 
-> **Lưu ý**: Không phải tất cả web components đều phù hợp với mobile (ví dụ: Hover Card, Context Menu). Các nền tảng mobile bao gồm 37 components thực tế phù hợp.
+> **Lưu ý**: Không phải tất cả web components đều phù hợp với mobile (ví dụ: Hover Card, Context Menu), vì vậy catalog mobile chủ động khác catalog web.
 
 ## Tính năng
 
