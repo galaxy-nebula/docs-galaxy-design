@@ -42,3 +42,15 @@
 .vp-doc div[class*='language-'] pre::-webkit-scrollbar-thumb:hover {
   background: var(--vp-c-text-3);
 }
+
+/* VitePress resets form elements unlayered (button,input,... { border:0;
+   padding:0; line-height:inherit; color:inherit }) — unlayered CSS beats
+   Tailwind v4's layered utilities, so demo checkboxes/radios/inputs render
+   without borders. Defer back to the cascade layers inside component
+   previews so Tailwind utilities apply. */
+.vp-doc .component-preview :is(button, input, optgroup, select, textarea) {
+  border: revert-layer;
+  padding: revert-layer;
+  line-height: revert-layer;
+  color: revert-layer;
+}
