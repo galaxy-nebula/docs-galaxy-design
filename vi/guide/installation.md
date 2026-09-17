@@ -12,7 +12,7 @@ Galaxy UI sao chép source component có thể chỉnh sửa vào dự án, theo
 ## Khởi tạo
 
 ```bash
-npx galaxy-design@latest init
+npx @galaxy-stack/design-cli@latest init
 ```
 
 CLI phát hiện framework, package manager, cấu trúc source và major version của Tailwind; sau đó tạo `components.json`, utilities/runtime, alias và cài đúng phiên bản dependency.
@@ -24,9 +24,9 @@ Next.js dùng registry React kèm biến đổi dành cho Next. Nuxt dùng regis
 ## Thêm component
 
 ```bash
-npx galaxy-design@latest add button
-npx galaxy-design@latest add button input dialog
-npx galaxy-design@latest add --all
+npx @galaxy-stack/design-cli@latest add button
+npx @galaxy-stack/design-cli@latest add button input dialog
+npx @galaxy-stack/design-cli@latest add --all
 ```
 
 Source được giữ trong repository để bạn chỉnh sửa. Dependency npm và dependency giữa các component được lấy từ registry tương ứng.
@@ -61,8 +61,8 @@ Với Tailwind v3, CLI giữ `tailwind.config.*`. Với v4, CLI sinh semantic th
 ## Chuyển từ v3 sang v4
 
 ```bash
-npx galaxy-design@latest migrate tailwind --dry-run
-npx galaxy-design@latest migrate tailwind --yes
+npx @galaxy-stack/design-cli@latest migrate tailwind --dry-run
+npx @galaxy-stack/design-cli@latest migrate tailwind --yes
 ```
 
 Hãy xem các cảnh báo tương thích và giữ bản sao lưu trong `.galaxy/backups/` cho tới khi ứng dụng build thành công.

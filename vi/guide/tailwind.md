@@ -8,8 +8,8 @@ Galaxy UI hỗ trợ **Tailwind CSS v3.4** và **Tailwind CSS v4** cho React, Vu
 ## Chuyển v3 sang v4
 
 ```bash
-npx galaxy-design@latest migrate tailwind --dry-run
-npx galaxy-design@latest migrate tailwind --yes
+npx @galaxy-stack/design-cli@latest migrate tailwind --dry-run
+npx @galaxy-stack/design-cli@latest migrate tailwind --yes
 ```
 
 CLI tạo backup trong `.galaxy/backups/`, thêm semantic theme bridge cho các utility như `border-border` và `bg-background`, giữ config cũ qua `@config`, đồng thời báo các tùy chọn cần xem lại.

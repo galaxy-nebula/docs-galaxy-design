@@ -92,19 +92,19 @@ export class AppComponent {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add scroll-area
+npx @galaxy-stack/design-cli@latest add scroll-area
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add scroll-area
+pnpm dlx @galaxy-stack/design-cli@latest add scroll-area
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add scroll-area
+yarn dlx @galaxy-stack/design-cli@latest add scroll-area
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add scroll-area
+bunx @galaxy-stack/design-cli@latest add scroll-area
 ```
 
 :::

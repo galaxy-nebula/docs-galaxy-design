@@ -15,19 +15,19 @@ Initialize Galaxy UI in your Angular project:
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest init
+npx @galaxy-stack/design-cli@latest init
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest init
+pnpm dlx @galaxy-stack/design-cli@latest init
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest init
+yarn dlx @galaxy-stack/design-cli@latest init
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest init
+bunx @galaxy-stack/design-cli@latest init
 ```
 
 :::
@@ -51,7 +51,7 @@ ng new my-app
 cd my-app
 
 # Initialize Galaxy UI
-npx galaxy-design@latest init
+npx @galaxy-stack/design-cli@latest init
 ```
 
 ### Configure Path Aliases
@@ -76,7 +76,7 @@ Update `tsconfig.json`:
 Add components to your project:
 
 ```bash
-npx galaxy-design@latest add button
+npx @galaxy-stack/design-cli@latest add button
 ```
 
 This will:

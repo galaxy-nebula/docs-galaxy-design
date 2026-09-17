@@ -72,19 +72,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add collapsible
+npx @galaxy-stack/design-cli@latest add collapsible
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add collapsible
+pnpm dlx @galaxy-stack/design-cli@latest add collapsible
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add collapsible
+yarn dlx @galaxy-stack/design-cli@latest add collapsible
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add collapsible
+bunx @galaxy-stack/design-cli@latest add collapsible
 ```
 
 :::

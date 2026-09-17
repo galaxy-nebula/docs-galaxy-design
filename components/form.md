@@ -93,19 +93,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add form
+npx @galaxy-stack/design-cli@latest add form
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add form
+pnpm dlx @galaxy-stack/design-cli@latest add form
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add form
+yarn dlx @galaxy-stack/design-cli@latest add form
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add form
+bunx @galaxy-stack/design-cli@latest add form
 ```
 
 ```bash [global]

@@ -5,7 +5,7 @@ Giao diện email giống Gmail với inbox, folders, danh sách email, reading 
 ## Cài đặt
 
 ```bash
-npx galaxy-design add email
+npx @galaxy-stack/design-cli add email
 ```
 
 ## Tính năng

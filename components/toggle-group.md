@@ -148,19 +148,19 @@ class _MyAppState extends State<MyApp> {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add toggle-group
+npx @galaxy-stack/design-cli@latest add toggle-group
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add toggle-group
+pnpm dlx @galaxy-stack/design-cli@latest add toggle-group
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add toggle-group
+yarn dlx @galaxy-stack/design-cli@latest add toggle-group
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add toggle-group
+bunx @galaxy-stack/design-cli@latest add toggle-group
 ```
 
 ```bash [global]

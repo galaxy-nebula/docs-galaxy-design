@@ -5,7 +5,7 @@ Mobile-optimized drawer navigation with swipe gestures, native animations, and t
 ## Installation
 
 ```bash
-npx galaxy-design add sidebar
+npx @galaxy-stack/design-cli add sidebar
 ```
 
 ::: info Platform

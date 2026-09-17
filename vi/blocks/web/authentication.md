@@ -5,7 +5,7 @@ Form authentication hoàn chỉnh với đăng nhập, đăng ký, social login,
 ## Cài đặt
 
 ```bash
-npx galaxy-design add authentication
+npx @galaxy-stack/design-cli add authentication
 ```
 
 ## Tính năng

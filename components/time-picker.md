@@ -53,19 +53,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add time-picker
+npx @galaxy-stack/design-cli@latest add time-picker
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add time-picker
+pnpm dlx @galaxy-stack/design-cli@latest add time-picker
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add time-picker
+yarn dlx @galaxy-stack/design-cli@latest add time-picker
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add time-picker
+bunx @galaxy-stack/design-cli@latest add time-picker
 ```
 
 ```bash [global]

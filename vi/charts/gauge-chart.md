@@ -120,19 +120,19 @@ class App extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add gauge-chart
+npx @galaxy-stack/design-cli@latest add gauge-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add gauge-chart
+pnpm dlx @galaxy-stack/design-cli@latest add gauge-chart
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add gauge-chart
+yarn dlx @galaxy-stack/design-cli@latest add gauge-chart
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add gauge-chart
+bunx @galaxy-stack/design-cli@latest add gauge-chart
 ```
 
 ```bash [global]

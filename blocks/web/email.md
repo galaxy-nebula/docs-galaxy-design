@@ -5,7 +5,7 @@ Gmail-like email interface with inbox, folders, email list, reading pane, and em
 ## Installation
 
 ```bash
-npx galaxy-design add email
+npx @galaxy-stack/design-cli add email
 ```
 
 ## Features

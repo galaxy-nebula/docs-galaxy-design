@@ -5,7 +5,7 @@ Form authentication tối ưu cho mobile với quản lý bàn phím native, h�
 ## Cài đặt
 
 ```bash
-npx galaxy-design add authentication
+npx @galaxy-stack/design-cli add authentication
 ```
 
 ::: info Nền tảng

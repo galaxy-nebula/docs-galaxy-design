@@ -7,19 +7,19 @@ Accessible resizable panel groups and layouts with keyboard support.
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add resizable
+npx @galaxy-stack/design-cli@latest add resizable
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add resizable
+pnpm dlx @galaxy-stack/design-cli@latest add resizable
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add resizable
+yarn dlx @galaxy-stack/design-cli@latest add resizable
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add resizable
+bunx @galaxy-stack/design-cli@latest add resizable
 ```
 
 :::

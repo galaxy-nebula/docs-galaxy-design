@@ -21,10 +21,10 @@ Before you begin, make sure you have:
 
 ```bash
 # Using npx
-npx galaxy-design@latest init
+npx @galaxy-stack/design-cli@latest init
 
 # Using bunx
-bunx galaxy-design@latest init
+bunx @galaxy-stack/design-cli@latest init
 ```
 
 The CLI will:
@@ -39,10 +39,10 @@ The CLI will:
 
 ```bash
 # Add a single component
-npx galaxy-design@latest add button
+npx @galaxy-stack/design-cli@latest add button
 
 # Add multiple components
-npx galaxy-design@latest add button input dialog
+npx @galaxy-stack/design-cli@latest add button input dialog
 ```
 
 ## Configuration

@@ -83,19 +83,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add hover-card
+npx @galaxy-stack/design-cli@latest add hover-card
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add hover-card
+pnpm dlx @galaxy-stack/design-cli@latest add hover-card
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add hover-card
+yarn dlx @galaxy-stack/design-cli@latest add hover-card
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add hover-card
+bunx @galaxy-stack/design-cli@latest add hover-card
 ```
 
 :::

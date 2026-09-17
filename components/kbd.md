@@ -78,15 +78,15 @@ class MyApp extends StatelessWidget {
 
 ::: code-group
 ```bash [React]
-npx galaxy-design add kbd
+npx @galaxy-stack/design-cli add kbd
 ```
 
 ```bash [Vue]
-npx galaxy-design add kbd
+npx @galaxy-stack/design-cli add kbd
 ```
 
 ```bash [Angular]
-npx galaxy-design add kbd
+npx @galaxy-stack/design-cli add kbd
 ```
 
 ```bash [global]

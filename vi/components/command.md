@@ -51,15 +51,15 @@ export class DemoComponent {}
 
 ::: code-group
 ```bash [React]
-npx galaxy-design add command
+npx @galaxy-stack/design-cli add command
 ```
 
 ```bash [Vue]
-npx galaxy-design add command
+npx @galaxy-stack/design-cli add command
 ```
 
 ```bash [Angular]
-npx galaxy-design add command
+npx @galaxy-stack/design-cli add command
 ```
 :::
 

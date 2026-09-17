@@ -118,15 +118,15 @@ class _MyAppState extends State<MyApp> {
 
 ::: code-group
 ```bash [React]
-npx galaxy-design add tags-input
+npx @galaxy-stack/design-cli add tags-input
 ```
 
 ```bash [Vue]
-npx galaxy-design add tags-input
+npx @galaxy-stack/design-cli add tags-input
 ```
 
 ```bash [Angular]
-npx galaxy-design add tags-input
+npx @galaxy-stack/design-cli add tags-input
 ```
 
 ```bash [global]

@@ -5,7 +5,7 @@ Navigation drawer tối ưu cho mobile với cử chỉ swipe, animations native
 ## Cài đặt
 
 ```bash
-npx galaxy-design add sidebar
+npx @galaxy-stack/design-cli add sidebar
 ```
 
 ::: info Nền tảng

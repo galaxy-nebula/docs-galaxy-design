@@ -140,19 +140,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add pie-chart
+npx @galaxy-stack/design-cli@latest add pie-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add pie-chart
+pnpm dlx @galaxy-stack/design-cli@latest add pie-chart
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add pie-chart
+yarn dlx @galaxy-stack/design-cli@latest add pie-chart
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add pie-chart
+bunx @galaxy-stack/design-cli@latest add pie-chart
 ```
 
 ```bash [global]

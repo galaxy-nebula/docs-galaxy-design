@@ -5,7 +5,7 @@ Galaxy UI supports **Tailwind CSS v3.4** and **Tailwind CSS v4** for React, Vue,
 ## Recommended setup
 
 ```bash
-npx galaxy-design@latest init
+npx @galaxy-stack/design-cli@latest init
 ```
 
 - v3 uses `tailwind.config.*`, PostCSS with `tailwindcss` and `autoprefixer`, `tailwindcss-animate`, and `tailwind-merge` v2.
@@ -89,8 +89,8 @@ export default {
 Preview and apply the migration:
 
 ```bash
-npx galaxy-design@latest migrate tailwind --dry-run
-npx galaxy-design@latest migrate tailwind --yes
+npx @galaxy-stack/design-cli@latest migrate tailwind --dry-run
+npx @galaxy-stack/design-cli@latest migrate tailwind --yes
 ```
 
 The migration updates dependencies, PostCSS, global CSS, and `components.json`. It preserves a legacy Tailwind config through `@config`, reports utilities needing review, and creates a backup under `.galaxy/backups/` before writing.

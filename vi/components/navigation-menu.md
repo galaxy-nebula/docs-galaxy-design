@@ -83,19 +83,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add navigation-menu
+npx @galaxy-stack/design-cli@latest add navigation-menu
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add navigation-menu
+pnpm dlx @galaxy-stack/design-cli@latest add navigation-menu
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add navigation-menu
+yarn dlx @galaxy-stack/design-cli@latest add navigation-menu
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add navigation-menu
+bunx @galaxy-stack/design-cli@latest add navigation-menu
 ```
 
 :::

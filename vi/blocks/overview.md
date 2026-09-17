@@ -38,7 +38,7 @@ Nhận các mẫu UI phức tạp trong vài phút thay vì vài giờ:
 
 ```bash
 # Cài đặt giao diện chat hoàn chỉnh trong một lệnh
-npx galaxy-design add chat-ui
+npx @galaxy-stack/design-cli add chat-ui
 ```
 
 ### 2. **Sẵn sàng cho Production**
@@ -67,13 +67,13 @@ Blocks được **copy vào dự án của bạn** (không cài đặt như depe
 
 ```bash
 # Khởi tạo Galaxy UI trong dự án của bạn
-npx galaxy-design init
+npx @galaxy-stack/design-cli init
 
 # Thêm một block
-npx galaxy-design add chat-ui
+npx @galaxy-stack/design-cli add chat-ui
 
 # Thêm nhiều blocks cùng lúc
-npx galaxy-design add sidebar authentication email
+npx @galaxy-stack/design-cli add sidebar authentication email
 ```
 
 ### Cấu trúc file
@@ -173,7 +173,7 @@ Sử dụng blocks cho các mẫu phổ biến thay vì xây dựng từ đầu:
 
 ```bash
 # ✅ Tốt: Sử dụng authentication block
-npx galaxy-design add authentication
+npx @galaxy-stack/design-cli add authentication
 
 # ❌ Tránh: Xây dựng auth forms từ đầu
 # Tự tạo LoginForm, RegisterForm, validation logic, v.v.
@@ -184,7 +184,7 @@ Cài đặt trước, sau đó tùy chỉnh theo nhu cầu của bạn:
 
 ```bash
 # 1. Cài đặt block
-npx galaxy-design add chat-ui
+npx @galaxy-stack/design-cli add chat-ui
 
 # 2. Tùy chỉnh trong dự án của bạn
 # Chỉnh sửa src/components/ui/chat-ui/ChatUI.vue

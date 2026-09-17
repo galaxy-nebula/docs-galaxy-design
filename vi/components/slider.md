@@ -53,19 +53,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add slider
+npx @galaxy-stack/design-cli@latest add slider
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add slider
+pnpm dlx @galaxy-stack/design-cli@latest add slider
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add slider
+yarn dlx @galaxy-stack/design-cli@latest add slider
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add slider
+bunx @galaxy-stack/design-cli@latest add slider
 ```
 
 :::

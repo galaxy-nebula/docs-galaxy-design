@@ -100,19 +100,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add accordion
+npx @galaxy-stack/design-cli@latest add accordion
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add accordion
+pnpm dlx @galaxy-stack/design-cli@latest add accordion
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add accordion
+yarn dlx @galaxy-stack/design-cli@latest add accordion
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add accordion
+bunx @galaxy-stack/design-cli@latest add accordion
 ```
 
 ```bash [global]

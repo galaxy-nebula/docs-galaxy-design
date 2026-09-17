@@ -88,19 +88,19 @@ export class AppComponent {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add alert-dialog
+npx @galaxy-stack/design-cli@latest add alert-dialog
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add alert-dialog
+pnpm dlx @galaxy-stack/design-cli@latest add alert-dialog
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add alert-dialog
+yarn dlx @galaxy-stack/design-cli@latest add alert-dialog
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add alert-dialog
+bunx @galaxy-stack/design-cli@latest add alert-dialog
 ```
 
 :::

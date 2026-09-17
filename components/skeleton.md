@@ -128,15 +128,15 @@ class MyApp extends StatelessWidget {
 
 ::: code-group
 ```bash [React]
-npx galaxy-design add skeleton
+npx @galaxy-stack/design-cli add skeleton
 ```
 
 ```bash [Vue]
-npx galaxy-design add skeleton
+npx @galaxy-stack/design-cli add skeleton
 ```
 
 ```bash [Angular]
-npx galaxy-design add skeleton
+npx @galaxy-stack/design-cli add skeleton
 ```
 
 ```bash [global]

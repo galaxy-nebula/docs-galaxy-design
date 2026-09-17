@@ -191,19 +191,19 @@ function generateInstallationSection(componentName: string): string {
 ::: code-group
 
 \`\`\`bash [npm]
-npx galaxy-design@latest add ${componentName}
+npx @galaxy-stack/design-cli@latest add ${componentName}
 \`\`\`
 
 \`\`\`bash [pnpm]
-pnpm dlx galaxy-design@latest add ${componentName}
+pnpm dlx @galaxy-stack/design-cli@latest add ${componentName}
 \`\`\`
 
 \`\`\`bash [yarn]
-yarn dlx galaxy-design@latest add ${componentName}
+yarn dlx @galaxy-stack/design-cli@latest add ${componentName}
 \`\`\`
 
 \`\`\`bash [bun]
-bunx galaxy-design@latest add ${componentName}
+bunx @galaxy-stack/design-cli@latest add ${componentName}
 \`\`\`
 
 \`\`\`bash [global]

@@ -53,19 +53,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add textarea
+npx @galaxy-stack/design-cli@latest add textarea
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add textarea
+pnpm dlx @galaxy-stack/design-cli@latest add textarea
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add textarea
+yarn dlx @galaxy-stack/design-cli@latest add textarea
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add textarea
+bunx @galaxy-stack/design-cli@latest add textarea
 ```
 
 :::

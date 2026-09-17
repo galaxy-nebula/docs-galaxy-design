@@ -87,19 +87,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add breadcrumb
+npx @galaxy-stack/design-cli@latest add breadcrumb
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add breadcrumb
+pnpm dlx @galaxy-stack/design-cli@latest add breadcrumb
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add breadcrumb
+yarn dlx @galaxy-stack/design-cli@latest add breadcrumb
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add breadcrumb
+bunx @galaxy-stack/design-cli@latest add breadcrumb
 ```
 
 ```bash [global]

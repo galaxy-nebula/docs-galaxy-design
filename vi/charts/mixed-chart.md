@@ -196,19 +196,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx galaxy-design@latest add mixed-chart
+npx @galaxy-stack/design-cli@latest add mixed-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx galaxy-design@latest add mixed-chart
+pnpm dlx @galaxy-stack/design-cli@latest add mixed-chart
 ```
 
 ```bash [yarn]
-yarn dlx galaxy-design@latest add mixed-chart
+yarn dlx @galaxy-stack/design-cli@latest add mixed-chart
 ```
 
 ```bash [bun]
-bunx galaxy-design@latest add mixed-chart
+bunx @galaxy-stack/design-cli@latest add mixed-chart
 ```
 
 ```bash [global]

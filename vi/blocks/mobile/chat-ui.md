@@ -5,7 +5,7 @@ Giao diện chat tối ưu cho mobile với các điều khiển thân thiện v
 ## Cài đặt
 
 ```bash
-npx galaxy-design add chat-ui
+npx @galaxy-stack/design-cli add chat-ui
 ```
 
 ::: info Nền tảng
