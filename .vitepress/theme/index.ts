@@ -128,6 +128,13 @@ export default {
 
     // Register chart demo components
     app.component('LineChartDemo', LineChartDemo)
+    // Auto-register ALL demos (new files in demos/ work without manual edits)
+    const demoModules = import.meta.glob('../components/demos/*.vue', { eager: true })
+    for (const [demoPath, demoMod] of Object.entries(demoModules)) {
+      const demoName = demoPath.split('/').pop()!.replace(/\.vue$/, '')
+      if (!app.component(demoName)) app.component(demoName, (demoMod as any).default)
+    }
+
     app.component('BarChartDemo', BarChartDemo)
     app.component('PieChartDemo', PieChartDemo)
     app.component('DonutChartDemo', DonutChartDemo)
