@@ -71,7 +71,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/vi/charts/',
     },
     {
-      text: 'v0.2.0',
+      text: 'v0.3.1',
       items: [
         {
           text: 'Changelog',
@@ -94,7 +94,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Giới thiệu', link: 'introduction' },
         { text: 'Cài đặt', link: 'installation' },
-        { text: 'Sử dụng CLI', link: 'cli-usage' },
+        { text: 'Sử dụng CLI', link: 'cli-usage' },        { text: 'MCP Server', link: 'mcp' },
         { text: 'Cấu hình', link: 'configuration' },
       ],
     },

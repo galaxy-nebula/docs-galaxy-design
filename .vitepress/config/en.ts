@@ -73,7 +73,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/blocks/',
     },
     {
-      text: 'v0.2.0',
+      text: 'v0.3.1',
       items: [
         {
           text: 'Changelog',
@@ -96,7 +96,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Introduction', link: 'introduction' },
         { text: 'Installation', link: 'installation' },
-        { text: 'CLI Usage', link: 'cli-usage' },
+        { text: 'CLI Usage', link: 'cli-usage' },        { text: 'MCP Server', link: 'mcp' },
         { text: 'Configuration', link: 'configuration' },
       ],
     },
