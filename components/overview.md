@@ -6,13 +6,13 @@ The CLI registry currently exposes the following installable component and block
 
 | Platform | Components | Styling | Status |
 |----------|-----------|---------|--------|
-| **React 18+** | 69 | Tailwind CSS v3/v4 + Radix UI | Reference web coverage |
-| **Vue 3** | 69 | Tailwind CSS v3/v4 + Radix Vue | Full component parity with React |
-| **Angular 20+** | 65 | Tailwind CSS v3/v4 + Radix NG | Full component parity with React |
-| **React Native** | 51 | NativeWind | Mobile-specific coverage |
-| **Flutter** | 50 | Material Design 3 | Mobile-specific coverage |
+| **React 18+** | 75 | Tailwind CSS v3/v4 + Radix UI | Reference web coverage |
+| **Vue 3** | 75 | Tailwind CSS v3/v4 + Radix Vue | Full component parity with React |
+| **Angular 20+** | 71 | Tailwind CSS v3/v4 + Radix NG | Full component parity with React |
+| **React Native** | 70 | NativeWind | Mobile-specific coverage |
+| **Flutter** | 69 | Material Design 3 | Mobile-specific coverage |
 
-The web registries share 62 base component names, generated from the canonical manifests in `packages/contracts`. Framework parity gaps and block counts are recorded in the manifest artifacts.
+The web registries share 67 base component names, generated from the canonical manifests in `packages/contracts`. Framework parity gaps and block counts are recorded in the manifest artifacts.
 
 ## Installation
 

@@ -6,11 +6,11 @@ Registry CLI hiện cung cấp số lượng component và block có thể cài 
 
 | Nền Tảng | Components | Styling | Trạng Thái |
 |----------|-----------|---------|--------|
-| **React 18+** | 69 | Tailwind CSS v3/v4 + Radix UI | Mốc tham chiếu cho web |
-| **Vue 3** | 69 | Tailwind CSS v3/v4 + Radix Vue | Đủ component parity với React |
-| **Angular 20+** | 65 | Tailwind CSS v3/v4 + Radix NG | Đủ component parity với React |
-| **React Native** | 51 | NativeWind | Phạm vi riêng cho mobile |
-| **Flutter** | 50 | Material Design 3 | Phạm vi riêng cho mobile |
+| **React 18+** | 75 | Tailwind CSS v3/v4 + Radix UI | Mốc tham chiếu cho web |
+| **Vue 3** | 75 | Tailwind CSS v3/v4 + Radix Vue | Đủ component parity với React |
+| **Angular 20+** | 71 | Tailwind CSS v3/v4 + Radix NG | Đủ component parity với React |
+| **React Native** | 70 | NativeWind | Phạm vi riêng cho mobile |
+| **Flutter** | 69 | Material Design 3 | Phạm vi riêng cho mobile |
 
 Ba registry web có chung 56 tên component nền. React có thêm `date-picker`, `date-range-picker`, `date-time-picker`, `time-picker`; Angular có thêm `gauge`. Tổng trong bảng đã bao gồm block.
 
