@@ -21,10 +21,10 @@ Before you begin, make sure you have:
 
 ```bash
 # Using npx
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 
 # Using bunx
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 ```
 
 The CLI will:
@@ -39,10 +39,10 @@ The CLI will:
 
 ```bash
 # Add a single component
-npx @galaxy-stack/design-cli@latest add button
+npx @galaxy-stack/nebula-cli@latest add button
 
 # Add multiple components
-npx @galaxy-stack/design-cli@latest add button input dialog
+npx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ## Configuration
@@ -630,4 +630,4 @@ Try:
 
 ## Support
 
-Having issues? Check our [GitHub Issues](https://github.com/buikevin/galaxy-design/issues) or contact kevinbui210191@gmail.com
+Having issues? Check our [GitHub Issues](https://github.com/galaxy-nebula/galaxy-design/issues) or contact kevinbui210191@gmail.com

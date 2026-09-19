@@ -92,19 +92,19 @@ export class AppComponent {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add tabs
+npx @galaxy-stack/nebula-cli@latest add tabs
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add tabs
+pnpm dlx @galaxy-stack/nebula-cli@latest add tabs
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add tabs
+yarn dlx @galaxy-stack/nebula-cli@latest add tabs
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add tabs
+bunx @galaxy-stack/nebula-cli@latest add tabs
 ```
 
 :::

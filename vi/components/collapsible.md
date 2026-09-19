@@ -72,19 +72,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add collapsible
+npx @galaxy-stack/nebula-cli@latest add collapsible
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add collapsible
+pnpm dlx @galaxy-stack/nebula-cli@latest add collapsible
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add collapsible
+yarn dlx @galaxy-stack/nebula-cli@latest add collapsible
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add collapsible
+bunx @galaxy-stack/nebula-cli@latest add collapsible
 ```
 
 :::

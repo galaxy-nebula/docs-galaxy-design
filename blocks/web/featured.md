@@ -5,7 +5,7 @@ Landing page sections including hero and features grid with multiple variants fo
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add featured
+npx @galaxy-stack/nebula-cli add featured
 ```
 
 ## Features

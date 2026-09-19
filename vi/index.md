@@ -17,7 +17,7 @@ hero:
       link: /vi/components/overview
     - theme: alt
       text: GitHub
-      link: https://github.com/buikevin/galaxy-design
+      link: https://github.com/galaxy-nebula/galaxy-design
 
 features:
   - icon: 🎨
@@ -63,34 +63,34 @@ features:
 
 ```bash [npm]
 # Khởi tạo dự án
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 
 # Thêm components
-npx @galaxy-stack/design-cli@latest add button input dialog
+npx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [pnpm]
 # Khởi tạo dự án
-pnpm dlx @galaxy-stack/design-cli@latest init
+pnpm dlx @galaxy-stack/nebula-cli@latest init
 
 # Thêm components
-pnpm dlx @galaxy-stack/design-cli@latest add button input dialog
+pnpm dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [yarn]
 # Khởi tạo dự án
-yarn dlx @galaxy-stack/design-cli@latest init
+yarn dlx @galaxy-stack/nebula-cli@latest init
 
 # Thêm components
-yarn dlx @galaxy-stack/design-cli@latest add button input dialog
+yarn dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [bun]
 # Khởi tạo dự án
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 
 # Thêm components
-bunx @galaxy-stack/design-cli@latest add button input dialog
+bunx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 :::
@@ -202,7 +202,7 @@ Galaxy UI đứng trên vai những người khổng lồ:
 
 - GitHub: [@buikevin](https://github.com/buikevin)
 - Email: kevinbui210191@gmail.com
-- Repository: [buikevin/galaxy-design](https://github.com/buikevin/galaxy-design)
+- Repository: [buikevin/galaxy-design](https://github.com/galaxy-nebula/galaxy-design)
 
 ## Giấy Phép
 

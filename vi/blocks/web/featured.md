@@ -5,7 +5,7 @@ Các phần landing page bao gồm hero và features grid với nhiều biến t
 ## Cài đặt
 
 ```bash
-npx @galaxy-stack/design-cli add featured
+npx @galaxy-stack/nebula-cli add featured
 ```
 
 ## Tính năng

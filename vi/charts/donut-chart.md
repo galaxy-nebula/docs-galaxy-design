@@ -123,19 +123,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add donut-chart
+npx @galaxy-stack/nebula-cli@latest add donut-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add donut-chart
+pnpm dlx @galaxy-stack/nebula-cli@latest add donut-chart
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add donut-chart
+yarn dlx @galaxy-stack/nebula-cli@latest add donut-chart
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add donut-chart
+bunx @galaxy-stack/nebula-cli@latest add donut-chart
 ```
 
 :::

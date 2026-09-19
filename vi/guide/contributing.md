@@ -14,7 +14,7 @@ Cảm ơn bạn đã quan tâm đến việc đóng góp cho Galaxy UI! Hướng
 
 1. **Fork repository**
 
-   Truy cập [github.com/buikevin/galaxy-design](https://github.com/buikevin/galaxy-design) và nhấp "Fork"
+   Truy cập [github.com/galaxy-nebula/galaxy-design](https://github.com/galaxy-nebula/galaxy-design) và nhấp "Fork"
 
 2. **Clone fork của bạn**
 
@@ -26,7 +26,7 @@ Cảm ơn bạn đã quan tâm đến việc đóng góp cho Galaxy UI! Hướng
 3. **Thêm upstream remote**
 
    ```bash
-   git remote add upstream https://github.com/buikevin/galaxy-design.git
+   git remote add upstream https://github.com/galaxy-nebula/galaxy-design.git
    ```
 
 ### Cài Đặt Dependencies
@@ -604,7 +604,7 @@ Bằng việc đóng góp, bạn đồng ý rằng các đóng góp của bạn 
 ## Có Câu Hỏi?
 
 - Đọc [tài liệu](/)
-- Tìm kiếm [issue hiện có](https://github.com/buikevin/galaxy-design/issues)
-- Mở [discussion mới](https://github.com/buikevin/galaxy-design/discussions)
+- Tìm kiếm [issue hiện có](https://github.com/galaxy-nebula/galaxy-design/issues)
+- Mở [discussion mới](https://github.com/galaxy-nebula/galaxy-design/discussions)
 
 Cảm ơn bạn đã đóng góp! 🎉

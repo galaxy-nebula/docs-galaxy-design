@@ -5,7 +5,7 @@ Mobile-optimized drawer navigation with swipe gestures, native animations, and t
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add sidebar
+npx @galaxy-stack/nebula-cli add sidebar
 ```
 
 ::: info Platform

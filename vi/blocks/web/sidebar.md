@@ -5,7 +5,7 @@ Sidebar điều hướng thu gọn với các mục menu lồng nhau, badges, ic
 ## Cài đặt
 
 ```bash
-npx @galaxy-stack/design-cli add sidebar
+npx @galaxy-stack/nebula-cli add sidebar
 ```
 
 ## Tính năng

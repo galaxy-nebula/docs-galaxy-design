@@ -103,15 +103,15 @@ class _MyAppState extends State<MyApp> {
 
 ::: code-group
 ```bash [React]
-npx @galaxy-stack/design-cli add calendar-range
+npx @galaxy-stack/nebula-cli add calendar-range
 ```
 
 ```bash [Vue]
-npx @galaxy-stack/design-cli add calendar-range
+npx @galaxy-stack/nebula-cli add calendar-range
 ```
 
 ```bash [Angular]
-npx @galaxy-stack/design-cli add calendar-range
+npx @galaxy-stack/nebula-cli add calendar-range
 ```
 
 ```bash [global]

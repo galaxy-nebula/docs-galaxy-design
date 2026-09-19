@@ -91,15 +91,15 @@ class _MyAppState extends State<MyApp> {
 
 ::: code-group
 ```bash [React]
-npx @galaxy-stack/design-cli add pagination
+npx @galaxy-stack/nebula-cli add pagination
 ```
 
 ```bash [Vue]
-npx @galaxy-stack/design-cli add pagination
+npx @galaxy-stack/nebula-cli add pagination
 ```
 
 ```bash [Angular]
-npx @galaxy-stack/design-cli add pagination
+npx @galaxy-stack/nebula-cli add pagination
 ```
 
 ```bash [global]

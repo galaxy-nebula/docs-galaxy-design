@@ -18,7 +18,7 @@ export const vi = defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/buikevin/galaxy-design/edit/main/docs/:path',
+      pattern: 'https://github.com/galaxy-nebula/galaxy-design/edit/main/docs/:path',
       text: 'Chỉnh sửa trang này trên GitHub',
     },
 
@@ -75,7 +75,7 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           text: 'Changelog',
-          link: 'https://github.com/buikevin/galaxy-design/blob/main/CHANGELOG.md',
+          link: 'https://github.com/galaxy-nebula/galaxy-design/blob/main/CHANGELOG.md',
         },
         {
           text: 'Đóng góp',

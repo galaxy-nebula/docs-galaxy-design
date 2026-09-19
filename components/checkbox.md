@@ -102,19 +102,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add checkbox
+npx @galaxy-stack/nebula-cli@latest add checkbox
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add checkbox
+pnpm dlx @galaxy-stack/nebula-cli@latest add checkbox
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add checkbox
+yarn dlx @galaxy-stack/nebula-cli@latest add checkbox
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add checkbox
+bunx @galaxy-stack/nebula-cli@latest add checkbox
 ```
 
 ```bash [global]

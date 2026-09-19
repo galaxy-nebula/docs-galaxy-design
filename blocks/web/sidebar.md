@@ -5,7 +5,7 @@ Collapsible navigation sidebar with nested menu items, badges, icons, and full k
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add sidebar
+npx @galaxy-stack/nebula-cli add sidebar
 ```
 
 ## Features

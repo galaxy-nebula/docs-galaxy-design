@@ -6,7 +6,7 @@ outline: deep
 
 Galaxy UI ships an official MCP (Model Context Protocol) server that lets AI assistants — Claude Desktop, Cursor, Windsurf, and any MCP-compatible client — query real component data instead of guessing: manifests, source code, and framework coverage.
 
-Package: [`@galaxy-stack/design-mcp`](https://www.npmjs.com/package/@galaxy-stack/design-mcp) · Listing: [smithery.ai/servers/galaxy-stack/design-mcp](https://smithery.ai/servers/galaxy-stack/design-mcp)
+Package: [`@galaxy-stack/nebula-mcp`](https://www.npmjs.com/package/@galaxy-stack/nebula-mcp) · Listing: [smithery.ai/servers/galaxy-stack/design-mcp](https://smithery.ai/servers/galaxy-stack/design-mcp)
 
 ## Tools
 
@@ -37,7 +37,7 @@ Add the server to your MCP client configuration:
   "mcpServers": {
     "galaxy-ui": {
       "command": "npx",
-      "args": ["-y", "@galaxy-stack/design-mcp"]
+      "args": ["-y", "@galaxy-stack/nebula-mcp"]
     }
   }
 }

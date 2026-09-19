@@ -32,15 +32,15 @@ export class DemoComponent {}
 
 ::: code-group
 ```bash [React]
-npx @galaxy-stack/design-cli add skeleton
+npx @galaxy-stack/nebula-cli add skeleton
 ```
 
 ```bash [Vue]
-npx @galaxy-stack/design-cli add skeleton
+npx @galaxy-stack/nebula-cli add skeleton
 ```
 
 ```bash [Angular]
-npx @galaxy-stack/design-cli add skeleton
+npx @galaxy-stack/nebula-cli add skeleton
 ```
 :::
 

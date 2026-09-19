@@ -6,7 +6,7 @@ outline: deep
 
 Galaxy UI có sẵn MCP (Model Context Protocol) server chính thức, cho phép AI assistant — Claude Desktop, Cursor, Windsurf và mọi client MCP — truy vấn dữ liệu component thật thay vì phỏng đoán: manifests, mã nguồn và độ phủ framework.
 
-Package: [`@galaxy-stack/design-mcp`](https://www.npmjs.com/package/@galaxy-stack/design-mcp) · Trang listing: [smithery.ai/servers/galaxy-stack/design-mcp](https://smithery.ai/servers/galaxy-stack/design-mcp)
+Package: [`@galaxy-stack/nebula-mcp`](https://www.npmjs.com/package/@galaxy-stack/nebula-mcp) · Trang listing: [smithery.ai/servers/galaxy-stack/design-mcp](https://smithery.ai/servers/galaxy-stack/design-mcp)
 
 ## Các tools
 
@@ -37,7 +37,7 @@ Thêm server vào cấu hình MCP client:
   "mcpServers": {
     "galaxy-ui": {
       "command": "npx",
-      "args": ["-y", "@galaxy-stack/design-mcp"]
+      "args": ["-y", "@galaxy-stack/nebula-mcp"]
     }
   }
 }

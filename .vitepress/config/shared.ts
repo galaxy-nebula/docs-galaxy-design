@@ -45,7 +45,7 @@ export const sharedConfig = defineConfig({
     logo: '/logo.png',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/buikevin/galaxy-design' }
+      { icon: 'github', link: 'https://github.com/galaxy-nebula/galaxy-design' }
     ],
 
     search: {

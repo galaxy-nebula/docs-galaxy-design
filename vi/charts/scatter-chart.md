@@ -209,19 +209,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add scatter-chart
+npx @galaxy-stack/nebula-cli@latest add scatter-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add scatter-chart
+pnpm dlx @galaxy-stack/nebula-cli@latest add scatter-chart
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add scatter-chart
+yarn dlx @galaxy-stack/nebula-cli@latest add scatter-chart
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add scatter-chart
+bunx @galaxy-stack/nebula-cli@latest add scatter-chart
 ```
 
 ```bash [global]

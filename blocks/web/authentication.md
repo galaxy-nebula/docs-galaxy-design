@@ -5,7 +5,7 @@ Complete authentication forms with login, register, social login, validation, an
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add authentication
+npx @galaxy-stack/nebula-cli add authentication
 ```
 
 ## Features

@@ -106,19 +106,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add tooltip
+npx @galaxy-stack/nebula-cli@latest add tooltip
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add tooltip
+pnpm dlx @galaxy-stack/nebula-cli@latest add tooltip
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add tooltip
+yarn dlx @galaxy-stack/nebula-cli@latest add tooltip
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add tooltip
+bunx @galaxy-stack/nebula-cli@latest add tooltip
 ```
 
 ```bash [global]

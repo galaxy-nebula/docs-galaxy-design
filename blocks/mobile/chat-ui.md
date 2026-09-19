@@ -5,7 +5,7 @@ Mobile-optimized chat interface with touch-friendly controls, native keyboard ha
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add chat-ui
+npx @galaxy-stack/nebula-cli add chat-ui
 ```
 
 ::: info Platform

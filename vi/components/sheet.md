@@ -35,15 +35,15 @@ export class DemoComponent {}
 
 ::: code-group
 ```bash [React]
-npx @galaxy-stack/design-cli add sheet
+npx @galaxy-stack/nebula-cli add sheet
 ```
 
 ```bash [Vue]
-npx @galaxy-stack/design-cli add sheet
+npx @galaxy-stack/nebula-cli add sheet
 ```
 
 ```bash [Angular]
-npx @galaxy-stack/design-cli add sheet
+npx @galaxy-stack/nebula-cli add sheet
 ```
 :::
 

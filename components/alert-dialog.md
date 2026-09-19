@@ -147,19 +147,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add alert-dialog
+npx @galaxy-stack/nebula-cli@latest add alert-dialog
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add alert-dialog
+pnpm dlx @galaxy-stack/nebula-cli@latest add alert-dialog
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add alert-dialog
+yarn dlx @galaxy-stack/nebula-cli@latest add alert-dialog
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add alert-dialog
+bunx @galaxy-stack/nebula-cli@latest add alert-dialog
 ```
 
 ```bash [global]

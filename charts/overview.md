@@ -94,19 +94,19 @@ Charts are installed individually via the Galaxy UI CLI:
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add line-chart
+npx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add line-chart
+pnpm dlx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add line-chart
+yarn dlx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add line-chart
+bunx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 :::
@@ -242,11 +242,11 @@ ChartColorSchemes.monochrome  // Grayscale
 
 - [ECharts Documentation](https://echarts.apache.org/)
 - [fl_chart Documentation](https://github.com/imaNNeo/fl_chart)
-- [Chart Implementation Guide](https://github.com/buikevin/galaxy-design/blob/main/CHARTS_IMPLEMENTATION_GUIDE.md)
+- [Chart Implementation Guide](https://github.com/galaxy-nebula/galaxy-design/blob/main/CHARTS_IMPLEMENTATION_GUIDE.md)
 
 ## Need Help?
 
-- [GitHub Issues](https://github.com/buikevin/galaxy-design/issues)
+- [GitHub Issues](https://github.com/galaxy-nebula/galaxy-design/issues)
 - [Discord Community](https://discord.gg/galaxy-ui)
 
 ## Author

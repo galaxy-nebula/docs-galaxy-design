@@ -15,19 +15,19 @@ Initialize Galaxy UI in your Angular project:
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest init
+pnpm dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest init
+yarn dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 ```
 
 :::
@@ -51,7 +51,7 @@ ng new my-app
 cd my-app
 
 # Initialize Galaxy UI
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 ```
 
 ### Configure Path Aliases
@@ -76,7 +76,7 @@ Update `tsconfig.json`:
 Add components to your project:
 
 ```bash
-npx @galaxy-stack/design-cli@latest add button
+npx @galaxy-stack/nebula-cli@latest add button
 ```
 
 This will:
@@ -492,4 +492,4 @@ npm install
 - [Vue Guide](/guide/frameworks/vue) - Learn about Vue integration
 - [React Guide](/guide/frameworks/react) - Learn about React integration
 - [Components](/components/overview) - Explore available components
-- [Examples](https://github.com/buikevin/galaxy-design/tree/main/examples/angular-example) - View Angular examples
+- [Examples](https://github.com/galaxy-nebula/galaxy-design/tree/main/examples/angular-example) - View Angular examples

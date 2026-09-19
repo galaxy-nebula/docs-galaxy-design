@@ -118,7 +118,7 @@ class App extends StatelessWidget {
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli@latest add gauge-chart
+npx @galaxy-stack/nebula-cli@latest add gauge-chart
 ```
 
 ## Usage

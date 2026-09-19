@@ -135,19 +135,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add line-chart
+npx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add line-chart
+pnpm dlx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add line-chart
+yarn dlx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add line-chart
+bunx @galaxy-stack/nebula-cli@latest add line-chart
 ```
 
 ```bash [global]

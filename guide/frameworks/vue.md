@@ -16,19 +16,19 @@ Initialize Galaxy UI in your Vue project:
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest init
+pnpm dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest init
+yarn dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 ```
 
 :::
@@ -57,7 +57,7 @@ cd my-app
 npm install
 
 # Initialize Galaxy UI
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 ```
 
 ### Vite Configuration
@@ -120,7 +120,7 @@ Update `tsconfig.json`:
 Add components to your project:
 
 ```bash
-npx @galaxy-stack/design-cli@latest add button
+npx @galaxy-stack/nebula-cli@latest add button
 ```
 
 This will:
@@ -538,4 +538,4 @@ npm install radix-vue@latest
 - [React Guide](/guide/frameworks/react) - Learn about React integration
 - [Angular Guide](/guide/frameworks/angular) - Learn about Angular integration
 - [Components](/components/overview) - Explore available components
-- [Examples](https://github.com/buikevin/galaxy-design/tree/main/examples/vue-example) - View Vue examples
+- [Examples](https://github.com/galaxy-nebula/galaxy-design/tree/main/examples/vue-example) - View Vue examples

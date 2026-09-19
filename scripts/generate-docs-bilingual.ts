@@ -90,19 +90,19 @@ function generateInstallationSection(kebabName: string, lang: Language): string 
 ::: code-group
 
 \`\`\`bash [${t.npm}]
-npx @galaxy-stack/design-cli@latest add ${kebabName}
+npx @galaxy-stack/nebula-cli@latest add ${kebabName}
 \`\`\`
 
 \`\`\`bash [${t.pnpm}]
-pnpm dlx @galaxy-stack/design-cli@latest add ${kebabName}
+pnpm dlx @galaxy-stack/nebula-cli@latest add ${kebabName}
 \`\`\`
 
 \`\`\`bash [${t.yarn}]
-yarn dlx @galaxy-stack/design-cli@latest add ${kebabName}
+yarn dlx @galaxy-stack/nebula-cli@latest add ${kebabName}
 \`\`\`
 
 \`\`\`bash [${t.bun}]
-bunx @galaxy-stack/design-cli@latest add ${kebabName}
+bunx @galaxy-stack/nebula-cli@latest add ${kebabName}
 \`\`\`
 
 \`\`\`bash [${t.global}]

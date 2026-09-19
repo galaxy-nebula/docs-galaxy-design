@@ -94,19 +94,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add alert
+npx @galaxy-stack/nebula-cli@latest add alert
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add alert
+pnpm dlx @galaxy-stack/nebula-cli@latest add alert
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add alert
+yarn dlx @galaxy-stack/nebula-cli@latest add alert
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add alert
+bunx @galaxy-stack/nebula-cli@latest add alert
 ```
 
 ```bash [global]
@@ -235,8 +235,8 @@ import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'
 
 ## Source Code
 
-- [Vue Component](https://github.com/buikevin/galaxy-design/blob/main/packages/vue/src/alert.ts)
-- [React Component](https://github.com/buikevin/galaxy-design/blob/main/packages/react/alert.tsx)
-- [Angular Component](https://github.com/buikevin/galaxy-design/blob/main/packages/angular/alert.ts)
-- [React Native Component](https://github.com/buikevin/galaxy-design/blob/main/packages/react-native/alert.tsx)
-- [Flutter Widget](https://github.com/buikevin/galaxy-design/blob/main/packages/flutter/lib/alert.dart)
+- [Vue Component](https://github.com/galaxy-nebula/galaxy-design/blob/main/packages/vue/src/alert.ts)
+- [React Component](https://github.com/galaxy-nebula/galaxy-design/blob/main/packages/react/alert.tsx)
+- [Angular Component](https://github.com/galaxy-nebula/galaxy-design/blob/main/packages/angular/alert.ts)
+- [React Native Component](https://github.com/galaxy-nebula/galaxy-design/blob/main/packages/react-native/alert.tsx)
+- [Flutter Widget](https://github.com/galaxy-nebula/galaxy-design/blob/main/packages/flutter/lib/alert.dart)

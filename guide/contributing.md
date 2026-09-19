@@ -14,7 +14,7 @@ Thank you for your interest in contributing to Galaxy UI! This guide will help y
 
 1. **Fork the repository**
 
-   Visit [github.com/buikevin/galaxy-design](https://github.com/buikevin/galaxy-design) and click "Fork"
+   Visit [github.com/galaxy-nebula/galaxy-design](https://github.com/galaxy-nebula/galaxy-design) and click "Fork"
 
 2. **Clone your fork**
 
@@ -26,7 +26,7 @@ Thank you for your interest in contributing to Galaxy UI! This guide will help y
 3. **Add upstream remote**
 
    ```bash
-   git remote add upstream https://github.com/buikevin/galaxy-design.git
+   git remote add upstream https://github.com/galaxy-nebula/galaxy-design.git
    ```
 
 ### Install Dependencies
@@ -604,7 +604,7 @@ By contributing, you agree that your contributions will be licensed under the pr
 ## Questions?
 
 - Read the [documentation](/)
-- Search [existing issues](https://github.com/buikevin/galaxy-design/issues)
-- Open a [new discussion](https://github.com/buikevin/galaxy-design/discussions)
+- Search [existing issues](https://github.com/galaxy-nebula/galaxy-design/issues)
+- Open a [new discussion](https://github.com/galaxy-nebula/galaxy-design/discussions)
 
 Thank you for contributing! 🎉

@@ -17,7 +17,7 @@ hero:
       link: /components/overview
     - theme: alt
       text: GitHub
-      link: https://github.com/buikevin/galaxy-design
+      link: https://github.com/galaxy-nebula/galaxy-design
 
 features:
   - icon: 🎨
@@ -63,34 +63,34 @@ features:
 
 ```bash [npm]
 # Initialize your project
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 
 # Add components
-npx @galaxy-stack/design-cli@latest add button input dialog
+npx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [pnpm]
 # Initialize your project
-pnpm dlx @galaxy-stack/design-cli@latest init
+pnpm dlx @galaxy-stack/nebula-cli@latest init
 
 # Add components
-pnpm dlx @galaxy-stack/design-cli@latest add button input dialog
+pnpm dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [yarn]
 # Initialize your project
-yarn dlx @galaxy-stack/design-cli@latest init
+yarn dlx @galaxy-stack/nebula-cli@latest init
 
 # Add components
-yarn dlx @galaxy-stack/design-cli@latest add button input dialog
+yarn dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [bun]
 # Initialize your project
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 
 # Add components
-bunx @galaxy-stack/design-cli@latest add button input dialog
+bunx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 :::
@@ -204,7 +204,7 @@ Created by **Bùi Trọng Hiếu (kevinbui)**
 
 - GitHub: [@buikevin](https://github.com/buikevin)
 - Email: kevinbui210191@gmail.com
-- Repository: [buikevin/galaxy-design](https://github.com/buikevin/galaxy-design)
+- Repository: [buikevin/galaxy-design](https://github.com/galaxy-nebula/galaxy-design)
 
 ## License
 

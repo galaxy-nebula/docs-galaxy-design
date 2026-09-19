@@ -21,19 +21,19 @@ Install components individually using the CLI:
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add button
+npx @galaxy-stack/nebula-cli@latest add button
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add button
+pnpm dlx @galaxy-stack/nebula-cli@latest add button
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add button
+yarn dlx @galaxy-stack/nebula-cli@latest add button
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add button
+bunx @galaxy-stack/nebula-cli@latest add button
 ```
 
 ```bash [global]
@@ -47,19 +47,19 @@ Or install multiple components at once:
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add button input dialog
+npx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add button input dialog
+pnpm dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add button input dialog
+yarn dlx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add button input dialog
+bunx @galaxy-stack/nebula-cli@latest add button input dialog
 ```
 
 ```bash [global]

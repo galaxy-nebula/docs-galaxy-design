@@ -81,19 +81,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add textarea
+npx @galaxy-stack/nebula-cli@latest add textarea
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add textarea
+pnpm dlx @galaxy-stack/nebula-cli@latest add textarea
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add textarea
+yarn dlx @galaxy-stack/nebula-cli@latest add textarea
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add textarea
+bunx @galaxy-stack/nebula-cli@latest add textarea
 ```
 
 ```bash [global]

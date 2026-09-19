@@ -176,7 +176,7 @@ Galaxy UI lấy cảm hứng và được xây dựng dựa trên công việc c
 **Bùi Trọng Hiếu (kevinbui)**
 - GitHub: [@buikevin](https://github.com/buikevin)
 - Email: kevinbui210191@gmail.com
-- Repository: [buikevin/galaxy-design](https://github.com/buikevin/galaxy-design)
+- Repository: [buikevin/galaxy-design](https://github.com/galaxy-nebula/galaxy-design)
 
 ## Giấy Phép
 

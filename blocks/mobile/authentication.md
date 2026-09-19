@@ -5,7 +5,7 @@ Mobile-optimized authentication forms with native keyboard handling, biometric s
 ## Installation
 
 ```bash
-npx @galaxy-stack/design-cli add authentication
+npx @galaxy-stack/nebula-cli add authentication
 ```
 
 ::: info Platform

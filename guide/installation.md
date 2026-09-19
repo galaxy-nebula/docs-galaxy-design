@@ -14,19 +14,19 @@ Galaxy UI copies editable component source into your project, following the shad
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest init
+npx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest init
+pnpm dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest init
+yarn dlx @galaxy-stack/nebula-cli@latest init
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest init
+bunx @galaxy-stack/nebula-cli@latest init
 ```
 
 :::
@@ -40,9 +40,9 @@ Next.js uses the React source registry with Next-specific transforms. Nuxt uses 
 ## Add components
 
 ```bash
-npx @galaxy-stack/design-cli@latest add button
-npx @galaxy-stack/design-cli@latest add button input dialog
-npx @galaxy-stack/design-cli@latest add --all
+npx @galaxy-stack/nebula-cli@latest add button
+npx @galaxy-stack/nebula-cli@latest add button input dialog
+npx @galaxy-stack/nebula-cli@latest add --all
 ```
 
 Component files remain in your repository and can be edited. Dependencies and component-to-component dependencies are read from the framework registry and installed automatically.
@@ -79,8 +79,8 @@ For Tailwind v3, `tailwind.config.*` is retained. For v4, the CLI generates a CS
 ## Migrate an existing v3 project
 
 ```bash
-npx @galaxy-stack/design-cli@latest migrate tailwind --dry-run
-npx @galaxy-stack/design-cli@latest migrate tailwind --yes
+npx @galaxy-stack/nebula-cli@latest migrate tailwind --dry-run
+npx @galaxy-stack/nebula-cli@latest migrate tailwind --yes
 ```
 
 Review the reported compatibility findings and keep the backup under `.galaxy/backups/` until the application build succeeds.

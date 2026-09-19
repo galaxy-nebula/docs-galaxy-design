@@ -53,19 +53,19 @@ export class AppComponent {}
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add date-picker
+npx @galaxy-stack/nebula-cli@latest add date-picker
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add date-picker
+pnpm dlx @galaxy-stack/nebula-cli@latest add date-picker
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add date-picker
+yarn dlx @galaxy-stack/nebula-cli@latest add date-picker
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add date-picker
+bunx @galaxy-stack/nebula-cli@latest add date-picker
 ```
 
 ```bash [global]

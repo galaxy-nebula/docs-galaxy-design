@@ -112,19 +112,19 @@ class MyApp extends StatelessWidget {
 ::: code-group
 
 ```bash [npm]
-npx @galaxy-stack/design-cli@latest add aspect-ratio
+npx @galaxy-stack/nebula-cli@latest add aspect-ratio
 ```
 
 ```bash [pnpm]
-pnpm dlx @galaxy-stack/design-cli@latest add aspect-ratio
+pnpm dlx @galaxy-stack/nebula-cli@latest add aspect-ratio
 ```
 
 ```bash [yarn]
-yarn dlx @galaxy-stack/design-cli@latest add aspect-ratio
+yarn dlx @galaxy-stack/nebula-cli@latest add aspect-ratio
 ```
 
 ```bash [bun]
-bunx @galaxy-stack/design-cli@latest add aspect-ratio
+bunx @galaxy-stack/nebula-cli@latest add aspect-ratio
 ```
 
 ```bash [global]
