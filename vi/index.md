@@ -202,7 +202,7 @@ Galaxy UI đứng trên vai những người khổng lồ:
 
 - GitHub: [@buikevin](https://github.com/buikevin)
 - Email: kevinbui210191@gmail.com
-- Repository: [buikevin/galaxy-design](https://github.com/galaxy-nebula/galaxy-design)
+- Repository: [galaxy-nebula/galaxy-design](https://github.com/galaxy-nebula/galaxy-design)
 
 ## Giấy Phép
 
