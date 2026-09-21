@@ -82,7 +82,7 @@ npx @galaxy-stack/nebula-cli@latest update button input
 
 ```json
 {
-  "$schema": "https://galaxy-design.vercel.app/schema.json",
+  "$schema": "https://galaxy-nebula.vercel.app/schema.json",
   "framework": "vue",
   "typescript": true,
   "tailwind": {

@@ -35,7 +35,7 @@ Source được giữ trong repository để bạn chỉnh sửa. Dependency npm
 
 ```json
 {
-  "$schema": "https://galaxy-design.vercel.app/schema.json",
+  "$schema": "https://galaxy-nebula.vercel.app/schema.json",
   "framework": "vue",
   "typescript": true,
   "tailwind": {

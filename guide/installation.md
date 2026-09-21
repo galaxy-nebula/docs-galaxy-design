@@ -53,7 +53,7 @@ The generated file uses the public schema:
 
 ```json
 {
-  "$schema": "https://galaxy-design.vercel.app/schema.json",
+  "$schema": "https://galaxy-nebula.vercel.app/schema.json",
   "framework": "react",
   "typescript": true,
   "tailwind": {

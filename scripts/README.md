@@ -402,7 +402,7 @@ Cần thêm config cho các components sau:
 
 ## 📚 Resources
 
-- [Galaxy UI CLI Docs](https://galaxy-design.vercel.app)
+- [Galaxy UI CLI Docs](https://galaxy-nebula.vercel.app)
 - [Radix UI](https://radix-ui.com)
 - [Radix Vue](https://radix-vue.com)
 - [Spartan NG](https://spartan.ng)

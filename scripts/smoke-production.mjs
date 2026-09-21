@@ -1,4 +1,4 @@
-const baseUrl = (process.env.GALAXY_DOCS_URL || 'https://galaxy-design.vercel.app').replace(
+const baseUrl = (process.env.GALAXY_DOCS_URL || 'https://galaxy-nebula.vercel.app').replace(
   /\/$/,
   '',
 );
