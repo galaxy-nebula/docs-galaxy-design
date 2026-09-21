@@ -1,6 +1,18 @@
 import { defineConfig } from 'vitepress'
 import path from 'path'
 
+async function fetchLatestVersion(): Promise<string> {
+  try {
+    const res = await fetch('https://registry.npmjs.org/@galaxy-stack%2fnebula-cli/latest', { signal: AbortSignal.timeout(5000) });
+    const data = await res.json() as { version: string };
+    return `v${data.version}`;
+  } catch {
+    return 'v1.0.0';
+  }
+}
+
+export const CLI_VERSION = await fetchLatestVersion();
+
 export const sharedConfig = defineConfig({
   title: 'Galaxy UI',
 

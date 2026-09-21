@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress';
+import { sharedConfig as _shared, CLI_VERSION } from './shared'
 
 export const en = defineConfig({
   description:
@@ -77,7 +78,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/blocks/',
     },
     {
-      text: 'v0.3.1',
+      text: CLI_VERSION,
       items: [
         {
           text: 'Changelog',

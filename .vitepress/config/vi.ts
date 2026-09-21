@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress';
+import { CLI_VERSION } from './shared'
 
 export const vi = defineConfig({
   description:
@@ -75,7 +76,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/vi/charts/',
     },
     {
-      text: 'v0.3.1',
+      text: CLI_VERSION,
       items: [
         {
           text: 'Changelog',
