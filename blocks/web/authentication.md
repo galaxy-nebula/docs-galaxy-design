@@ -2,6 +2,14 @@
 
 Complete authentication forms with login, register, social login, validation, and error handling.
 
+<ComponentPreview name="AuthenticationDemo">
+  <template #preview>
+    <DemoContainer>
+      <AuthenticationDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ```bash

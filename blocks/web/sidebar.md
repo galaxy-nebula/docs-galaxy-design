@@ -2,6 +2,14 @@
 
 Collapsible navigation sidebar with nested menu items, badges, icons, and full keyboard support.
 
+<ComponentPreview name="SidebarBlockDemo">
+  <template #preview>
+    <DemoContainer>
+      <SidebarBlockDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ```bash

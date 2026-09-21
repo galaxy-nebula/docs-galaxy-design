@@ -2,6 +2,14 @@
 
 A complete chat interface with message list, user avatars, timestamps, and message input.
 
+<ComponentPreview name="ChatUIDemo">
+  <template #preview>
+    <DemoContainer>
+      <ChatUIDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ::: code-group

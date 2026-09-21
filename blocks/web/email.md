@@ -2,6 +2,14 @@
 
 Gmail-like email interface with inbox, folders, email list, reading pane, and email actions.
 
+<ComponentPreview name="EmailBlockDemo">
+  <template #preview>
+    <DemoContainer>
+      <EmailBlockDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ```bash

@@ -2,6 +2,14 @@
 
 Landing page sections including hero and features grid with multiple variants for marketing pages.
 
+<ComponentPreview name="FeaturedSectionDemo">
+  <template #preview>
+    <DemoContainer>
+      <FeaturedSectionDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ```bash
