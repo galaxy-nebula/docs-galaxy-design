@@ -3,6 +3,7 @@ import type { Theme } from 'vitepress'
 import ComponentPreview from '../components/ComponentPreview.vue'
 import DemoContainer from '../components/DemoContainer.vue'
 import FrameworkTabs from '../components/FrameworkTabs.vue'
+import PlaygroundView from '../components/playground/PlaygroundView.vue'
 
 // Demo components
 import AccordionDemo from '../components/demos/AccordionDemo.vue'
@@ -76,6 +77,7 @@ export default {
     app.component('ComponentPreview', ComponentPreview)
     app.component('DemoContainer', DemoContainer)
     app.component('FrameworkTabs', FrameworkTabs)
+    app.component('PlaygroundView', PlaygroundView)
 
     // Register demo components
     app.component('AccordionDemo', AccordionDemo)

@@ -63,6 +63,10 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/components/',
     },
     {
+      text: 'Playground',
+      link: '/playground',
+    },
+    {
       text: 'Charts',
       link: '/charts/overview',
       activeMatch: '/charts/',
