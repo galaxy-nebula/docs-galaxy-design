@@ -66,6 +66,10 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/vi/components/',
     },
     {
+      text: 'Playground',
+      link: '/vi/playground',
+    },
+    {
       text: 'Biểu đồ',
       link: '/vi/charts/overview',
       activeMatch: '/vi/charts/',
