@@ -13,6 +13,7 @@ export const en = defineConfig({
       '/components/': { base: '/components/', items: sidebarComponents() },
       '/charts/': { base: '/charts/', items: sidebarCharts() },
       '/blocks/': { base: '/blocks/', items: sidebarBlocks() },
+      '/assistant/': { base: '/assistant/', items: sidebarAssistant() },
     },
 
     editLink: {
@@ -76,6 +77,11 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Blocks',
       link: '/blocks/overview',
       activeMatch: '/blocks/',
+    },
+    {
+      text: 'Assistant',
+      link: '/assistant/overview',
+      activeMatch: '/assistant/',
     },
     {
       text: CLI_VERSION,
@@ -282,6 +288,22 @@ function sidebarBlocks(): DefaultTheme.SidebarItem[] {
         { text: 'Chat UI (Mobile)', link: 'mobile/chat-ui' },
         { text: 'Drawer Navigation', link: 'mobile/sidebar' },
         { text: 'Authentication (Mobile)', link: 'mobile/authentication' },
+      ],
+    },
+  ];
+}
+
+function sidebarAssistant(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Assistant UI',
+      collapsed: false,
+      items: [
+        { text: 'Overview', link: 'overview' },
+        { text: 'Chat Panel', link: 'chat-panel' },
+        { text: 'Agent Activity', link: 'agent-activity' },
+        { text: 'Diff Review', link: 'diff-review' },
+        { text: 'Prompt Box', link: 'prompt-box' },
       ],
     },
   ];

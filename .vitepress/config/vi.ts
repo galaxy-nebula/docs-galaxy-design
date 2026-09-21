@@ -16,6 +16,7 @@ export const vi = defineConfig({
       },
       '/vi/charts/': { base: '/vi/charts/', items: sidebarCharts() },
       '/vi/blocks/': { base: '/vi/blocks/', items: sidebarBlocks() },
+      '/vi/assistant/': { base: '/vi/assistant/', items: sidebarAssistant() },
     },
 
     editLink: {
@@ -74,6 +75,11 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Biểu đồ',
       link: '/vi/charts/overview',
       activeMatch: '/vi/charts/',
+    },
+    {
+      text: 'Assistant',
+      link: '/vi/assistant/overview',
+      activeMatch: '/vi/assistant/',
     },
     {
       text: CLI_VERSION,
@@ -280,6 +286,22 @@ function sidebarBlocks(): DefaultTheme.SidebarItem[] {
         { text: 'Chat UI (Mobile)', link: 'mobile/chat-ui' },
         { text: 'Drawer Navigation', link: 'mobile/sidebar' },
         { text: 'Authentication (Mobile)', link: 'mobile/authentication' },
+      ],
+    },
+  ];
+}
+
+function sidebarAssistant(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Assistant UI',
+      collapsed: false,
+      items: [
+        { text: 'Tổng quan', link: 'overview' },
+        { text: 'Chat Panel', link: 'chat-panel' },
+        { text: 'Agent Activity', link: 'agent-activity' },
+        { text: 'Diff Review', link: 'diff-review' },
+        { text: 'Prompt Box', link: 'prompt-box' },
       ],
     },
   ];
