@@ -2,6 +2,14 @@
 
 Accessible resizable panel groups and layouts with keyboard support.
 
+<ComponentPreview name="ResizableDemo">
+  <template #preview>
+    <DemoContainer>
+      <ResizableDemo />
+    </DemoContainer>
+  </template>
+</ComponentPreview>
+
 ## Installation
 
 ::: code-group
